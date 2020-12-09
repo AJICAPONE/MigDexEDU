@@ -1,0 +1,11 @@
+extends ../layout/common
+
+block variables
+    - var title = 'Прайс-лист'
+    - var pageClass = 'common-page'
+
+block content
+    include price-list/section-reviews-baner
+    include ../modules/breadcrumbs
+    include price-list/section-prices
+    include index/section-have-question

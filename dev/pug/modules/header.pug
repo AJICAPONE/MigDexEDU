@@ -1,0 +1,166 @@
+header.static
+    .header-static
+        .container
+            .row
+                .header-main.col-xl-12.col-lg-12.col-md-12
+                    .header-logo
+                        +icon('logo')
+                    .header-main-items--wrap
+                        .header-main-items.col-xl-7.col-lg-7.col-md-9
+                            .header-main__item
+                                +icon('clock')
+                                p Пн-Вс с 09:00 до 20:00
+                            .header-main__item
+                                +icon('mail')
+                                a(href="mailto:info@migdex-edu.ru") info@migdex-edu.ru
+                        .header-main-items.col-xl-5.col-lg-5.col-md-3.pr-0
+                            .header-main__item--phone
+                                a.header-main__phone--num(href="tel:+74999384411") +7 (499) 938-44-11
+                                a.header-main__phone--text(data-toggle="modal" data-target="#popup-callback") Обратный звонок
+                            .header-main__item--phone
+                                a.header-main__phone--num(href="tel:+79684060110") +7 (968) 406-01-10
+                                a.header-main__phone--text(data-toggle="modal" data-target="#popup-callback") Обратный звонок
+                // .header-main
+            // .row
+        // .container
+        .header-nav.header-nav-desctop.col-xl-12.col-lg-12
+            .container
+                ul.header-nav-menu--items
+                    li.header-nav-menu--item
+                        a.header-nav-menu--item__link(href="/about.html") О нас
+                    li.header-nav-menu--item
+                        a.header-nav-menu--item__link(href="/subject.html") Услуги
+                        .header-sub-menu-dropdown-wrap.dropdown-absolute-menu
+                            .container
+                                ul.header-sub-menu-dropdown-list.menu-level-2
+                                    li.header-sub-menu-dropdown-item РВП, ВНЖ, ИР, ГРАЖДАНСТВО РФ
+                                        ul.header-sub-menu-dropdown-list.menu-level-3
+                                            li.header-sub-menu-dropdown-item
+                                                a(href="/") Разрешение на работу (ИР)
+                                            li.header-sub-menu-dropdown-item
+                                                a(href="/") Временное проживание (РВП)
+                                            li.header-sub-menu-dropdown-item
+                                                a(href="/") Вид на жительство (ВНЖ)
+                                            li.header-sub-menu-dropdown-item
+                                                a(href="/") Гражданство РФ
+                                    li.header-sub-menu-dropdown-item Тестирование по русскому языку (ТРКИ)
+                                    li.header-sub-menu-dropdown-item Добровольное медицинское страхование
+                                    li.header-sub-menu-dropdown-item Переводы документов
+                    li.header-nav-menu--item
+                        a.header-nav-menu--item__link(href="/solution-job.html") Документы
+                    li.header-nav-menu--item
+                        a.header-nav-menu--item__link(href="/") Консультация
+                    li.header-nav-menu--item
+                        a.header-nav-menu--item__link(href="/reviews.html") Отзывы
+                    li.header-nav-menu--item
+                        a.header-nav-menu--item__link(href="/articles.html") Статьи
+                    li.header-nav-menu--item
+                        a.header-nav-menu--item__link(href="/contacts.html") Контакты
+
+
+            // .container
+        // .header-nav
+        .header-nav.header-nav-mobile.col-xl-12.col-lg-12
+            .container
+                .header-nav-mobile--wrap
+                    .header-nav-mobile--mail
+                        +icon('mail')
+                        a(href="mailto:info@migdex-edu.ru") info@migdex-edu.ru
+                    .sandwich-menu
+                        .menu-sandwich
+                            span.hamburguer
+
+
+            // .container
+        // .header-nav
+    // .header-static
+    nav.sandwich-menu-show
+        .sandwich-menu-close--wrap#mydiv
+            .sandwich-menu-header-main
+                .header-main.col-xl-12.col-lg-12.col-md-12
+                    .header-logo
+                        +icon('logo')
+                    .header-main-items--wrap
+                        .header-main-items.col-xl-7.col-lg-7.col-md-9
+                            .header-main__item
+                                +icon('clock')
+                                p Пн-Вс с 09:00 до 20:00
+                            .header-main__item
+                                +icon('mail')
+                                a(href="mailto:info@migdex-edu.ru") info@migdex-edu.ru
+                        .header-main-items.col-xl-5.col-lg-5.col-md-3.pr-0
+                            .header-main__item--phone
+                                a.header-main__phone--num(href="tel:+74999384411") +7 (499) 938-44-11
+                                a.header-main__phone--text(data-toggle="modal" data-target="#popup-callback") Обратный звонок
+                            .header-main__item--phone
+                                a.header-main__phone--num(href="tel:+79684060110") +7 (968) 406-01-10
+                                a.header-main__phone--text(data-toggle="modal" data-target="#popup-callback") Обратный звонок
+
+                ul.sandwich-menu-header-main--list
+                    li.sandwich-menu-header-main--items
+                        a(href="/about.html") О нас
+                    li.sandwich-menu-header-main--items
+                        a(href="/subject.html") Услуги
+                    li.sandwich-menu-header-main--items
+                        a(href="/subtest-exam.html") Прайс-лист
+                    li.sandwich-menu-header-main--items
+                        a(href="/reviews.html") Отзывы
+                    li.sandwich-menu-header-main--items
+                        a(href="/articles.html") Статьи
+                    li.sandwich-menu-header-main--items
+                        a(href="/") Партнёрство
+                    li.sandwich-menu-header-main--items
+                        a(href="/contacts.html") Контакты
+                //h3.section-title-medium Меню
+                //.sandwich-menu-close-button
+                //    +icon('close')
+
+    .header-fixed
+        .container
+            .row
+                .header-fixed--wrapper.col-xl-12.col-lg-12.col-md-12.col-sm-12
+                    .header-static-wrap
+                        .header-logo
+                            +icon('logo')
+                    ul.header-nav-menu--items.col-xl-8.col-lg-8.col-md-10.col-sm-10
+                        li.header-nav-menu--item
+                            a.header-nav-menu--item__link(href="/about.html") О нас
+                        li.header-nav-menu--item
+                            a.header-nav-menu--item__link(href="/subject.html") Услуги
+                            .header-sub-menu-dropdown-wrap.dropdown-fixed-menu
+                                .container
+                                    ul.header-sub-menu-dropdown-list.menu-level-2
+                                        li.header-sub-menu-dropdown-item РВП, ВНЖ, ИР, ГРАЖДАНСТВО РФ
+                                            ul.header-sub-menu-dropdown-list.menu-level-3
+                                                li.header-sub-menu-dropdown-item
+                                                    a(href="/") Разрешение на работу (ИР)
+                                                li.header-sub-menu-dropdown-item
+                                                    a(href="/") Временное проживание (РВП)
+                                                li.header-sub-menu-dropdown-item
+                                                    a(href="/") Вид на жительство (ВНЖ)
+                                                li.header-sub-menu-dropdown-item
+                                                    a(href="/") Гражданство РФ
+                                        li.header-sub-menu-dropdown-item Тестирование по русскому языку (ТРКИ)
+                                        li.header-sub-menu-dropdown-item Добровольное медицинское страхование
+                                        li.header-sub-menu-dropdown-item Переводы документов
+                        li.header-nav-menu--item
+                            a.header-nav-menu--item__link(href="/solution-job.html") Документы
+                        li.header-nav-menu--item
+                            a.header-nav-menu--item__link(href="/") Консультация
+                        li.header-nav-menu--item
+                            a.header-nav-menu--item__link(href="/reviews.html") Отзывы
+                        li.header-nav-menu--item
+                            a.header-nav-menu--item__link(href="/articles.html") Статьи
+                        li.header-nav-menu--item
+                            a.header-nav-menu--item__link(href="/contacts.html") Контакты
+                    .header-main-items
+                        .header-main__item--phone
+                            a.header-main__phone--num(href="tel:+79684060110") +7 (968) 406-01-10
+                            a.header-main__phone--text(data-toggle="modal" data-target="#popup-callback") Обратный звонок
+                    .header-nav-mobile--wrap.col-md-10
+                        .header-nav-mobile--mail
+                            +icon('mail')
+                            a(href="mailto:info@migdex-edu.ru") info@migdex-edu.ru
+                        .sandwich-menu
+                            .menu-sandwich
+                                span.hamburguer

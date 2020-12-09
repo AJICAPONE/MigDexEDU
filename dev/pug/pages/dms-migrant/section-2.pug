@@ -1,0 +1,449 @@
+section.dms-for-migrant
+    .container
+        .dms-for-migrant-form.blue-box
+            h3.section-title-medium Рассчитать стоимость полиса
+            p.section-title-text.color-opa.mb-5 Для подбора наиболее подходящей программы, пожалуйста, выберите нужные вам параметры
+            .dms-form-migrant-input-wrap.mb-5.row
+                .dms-form-migrant-input-w.col-lg-3.col-md-6
+                    select.test
+                        option(value="Регион") Регион
+                        option(value="Регион2") Регион2
+                        option(value="Регион3") Регион3
+                .dms-form-migrant-input-w.col-lg-3.col-md-6
+                    input.popup-modal-input(type="text" placeholder="Возраст (полных лет)")
+                .dms-form-migrant-input-w.col-lg-3.col-md-6
+                    select.test
+                        option(value="Регион") Регион
+                        option(value="Регион2") Регион2
+                        option(value="Регион3") Регион3
+                .dms-form-migrant-input-w.col-lg-3.col-md-6.d-flex.justify-content-center.align-items-center
+                    input.popup-modal-input-checkbox#checked-dms(type="checkbox")
+                    label(for="checked-dms")
+                    span.dms-checked-text Для патента
+                    .dms-tooltip
+                        +icon('quest-gray')
+                        p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+            a.migdex-button-style.dms-button-ras.mb-5(href="/") Рассчитать стоимость
+
+
+
+
+
+            .dms-how-much-wrap.d-flex
+                .dms-how-much-block-1.col-lg-4.col-md-5.col-sm-7
+                    .dms-how-much-header.mobile-576-none
+                        h3.dms-header-text1 Стоимость программы
+                        p.dms-header-text2 Всегда Здоров
+                        p.dms-header-text3 Страховая сумма
+                    .dms-how-much-header.desktop-dms-none
+                        .dms-how-much-header-wrap-wrap
+                            .dms-how-much-header-wrap
+                                h3.dms-header-text1 Стоимость программы
+                                p.dms-header-text2 Всегда Здоров
+                                p.dms-header-text3 Страховая сумма
+                            .dms-how-much-header-wrap
+                                h3.dms-header-text1 990 ₽
+                                p.dms-header-text2 Стандарт (3 Месяца)
+                                p.dms-header-text3 230 000 ₽
+                    .dms-how-much-body
+                        ul.dms-how-much-body-list
+                            li.dms-how-much-body-item
+                                span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                .dms-tooltip
+                                    +icon('quest-gray')
+                                    p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                            li.dms-how-much-body-item
+                                span.dms-how-much-body-item-text Стоматологические услуги
+                                .dms-tooltip
+                                    +icon('quest-gray')
+                                    p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                            li.dms-how-much-body-item
+                                span.dms-how-much-body-item-text Экстренная госпитализация
+                                .dms-tooltip
+                                    +icon('quest-gray')
+                                    p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                            li.dms-how-much-body-item
+                                span.dms-how-much-body-item-text Травмпункт
+                                .dms-tooltip
+                                    +icon('quest-gray')
+                                    p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+
+                            li.dms-how-much-body-item
+                                span.dms-how-much-body-item-text Скорая медицинская помощь
+                                .dms-tooltip
+                                    +icon('quest-gray')
+                                    p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                            li.dms-how-much-body-item
+                                span.dms-how-much-body-item-text Медицинская репатриация
+                                .dms-tooltip
+                                    +icon('quest-gray')
+                                    p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                            li.dms-how-much-body-item
+                                span.dms-how-much-body-item-text Помощь на дому
+                                .dms-tooltip
+                                    +icon('quest-gray')
+                                    p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                            li.dms-how-much-body-item
+                                span.dms-how-much-body-item-text Вызов врача на дом
+                                .dms-tooltip
+                                    +icon('quest-gray')
+                                    p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+
+                            li.dms-how-much-body-item
+                                span.dms-how-much-body-item-text Экспертиза временной нетрудоспособности
+
+                            li.dms-how-much-body-item
+                                span.dms-how-much-body-item-text Подходит для оформления патента
+                                .dms-tooltip
+                                    +icon('quest-gray')
+                                    p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+
+                .dms-how-much-block-2.col-lg-8.col-md-7.col-sm-5
+                    ul.dms-how-much-list-items
+                        li.dms-how-much-items-item
+                            .dms-how-much-header
+                                h3.dms-header-text1 990 ₽
+                                p.dms-header-text2 Стандарт (3 Месяца)
+                                p.dms-header-text3 230 000 ₽
+                            ul.dms-how-much-body-list
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('suk')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('suk')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('suk')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('suk')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('non')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('suk')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('non')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('non')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('non')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('non')
+                            a.migdex-button-style.migdex-short-button.m-0-auto(href="/") Заказать
+                        li.dms-how-much-items-item
+                            .dms-how-much-header
+                                h3.dms-header-text1 2 200 ₽
+                                p.dms-header-text2 Выгода (3 Месяца)
+                                p.dms-header-text3 350 000 ₽
+                            ul.dms-how-much-body-list
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('suk')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('suk')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('suk')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('suk')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('non')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('suk')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('non')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('suk')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('non')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('suk')
+                            a.migdex-button-style.migdex-short-button.m-0-auto(href="/") Заказать
+                        li.dms-how-much-items-item
+                            .dms-how-much-header
+                                h3.dms-header-text1 2 420 ₽
+                                p.dms-header-text2 Экстра (3 Месяца)
+                                p.dms-header-text3 450 000 ₽
+                            ul.dms-how-much-body-list
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('suk')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('suk')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('suk')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('suk')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('non')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('suk')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('non')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('suk')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('non')
+                                li.dms-how-much-body-item.dms-white
+                                    +icon('suk')
+                            a.migdex-button-style.migdex-short-button.m-0-auto(href="/") Заказать
+
+
+            .dms-how-much-mobile-wrap.d-flex
+                .dms-how-much-mobile-block-1
+                    .dms-how-much-mobile-wrapper.d-flex
+                        .dms-how-much-mobile-header
+                            h3.dms-header-text1 Стоимость программы
+                            p.dms-header-text2 Всегда Здоров
+                            p.dms-header-text3 Страховая сумма
+                        .dms-how-much-mobile-header--wrapper
+                            .dms-how-much-mobile-header2
+                                h3.dms-header-text1 2 200 ₽
+                                p.dms-header-text2 Выгода (3 Месяца)
+                                p.dms-header-text3 350 000 ₽
+                            .dms-how-much-mobile-header2
+                                h3.dms-header-text1 2 200 ₽
+                                p.dms-header-text2 Выгода (3 Месяца)
+                                p.dms-header-text3 350 000 ₽
+                            .dms-how-much-mobile-header2
+                                h3.dms-header-text1 2 420 ₽
+                                p.dms-header-text2 Экстра (3 Месяца)
+                                p.dms-header-text3 450 000 ₽
+
+
+
+                    .dms-how-much-mobile-body-list
+                        .dms-how-much-mobile-body-list-js
+                            ul.dms-how-much-body-list
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('suk')
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('suk')
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('suk')
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('suk')
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('non')
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('suk')
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('non')
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('suk')
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('non')
+
+                            ul.dms-how-much-body-list
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('suk')
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('suk')
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('suk')
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('suk')
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('non')
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('suk')
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('non')
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('suk')
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('non')
+
+                            ul.dms-how-much-body-list
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('suk')
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('suk')
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('suk')
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('suk')
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('non')
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('suk')
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('non')
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('suk')
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                .dms-how-much-mobile-body-list-item-wrap
+                                    li.dms-how-much-body-item
+                                        span.dms-how-much-body-item-text Амбулаторно-поликлиническая помощь
+                                        .dms-tooltip
+                                            +icon('quest-gray')
+                                            p.dms-tooltip-block.blue-box Первичная медико-санитарная помощь в экстренной форме, оказываемая амбулаторно
+                                    li.dms-how-much-body-item.dms-white
+                                        +icon('non')

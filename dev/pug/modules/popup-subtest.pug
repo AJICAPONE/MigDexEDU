@@ -1,0 +1,22 @@
+#popup-subtest.modal.fade(tabindex='-1', role='dialog', aria-labelledby='popup-title', aria-hidden='true')
+    form.modal-dialog.modal-dialog-centered(role='document')
+        .modal-content.blue-box-popup.popup-modal-content
+            .modal-header
+                button.close.popup-close-migdex(type='button' data-dismiss='modal' aria-label='Close')
+                    +icon('close')
+            h3.section-title-medium.mb-5.text-center Введите ваши данные
+            .modal-body.popup-modal-body
+                .popup-inputs-wrapper
+                    .popup-inputs-modal--wrap
+                        input.popup-modal-input(type="text" placeholder="Фамилия")
+                    .popup-inputs-modal--wrap
+                        input.popup-modal-input(type="text" placeholder="Имя")
+                    .popup-inputs-modal--wrap
+                        input.popup-modal-input(type="text" placeholder="Отчество")
+                    .popup-inputs-modal--wrap
+                        input.popup-modal-input.mask-phone(type="text" placeholder="Номер телефона")
+                    .popup-inputs-modal--wrap
+                        input.popup-modal-input(type="text" placeholder="Email")
+
+            .modal-footer.popup-modal-footer
+                button.migdex-button-style.popup-submit-button.popup-start-test(type="submit") Начать тестирование

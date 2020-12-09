@@ -1,0 +1,565 @@
+header
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 5;
+  background-color: transparent;
+  transition: all linear .25s;
+
+.header-main
+  display flex
+  align-items center
+  height 100px
+.header-logo
+  margin-right 35px
+
+  .icon
+    size(117px,70px)
+
+.header-main-items--wrap
+  display flex
+  width 100%
+  color #fff
+  a
+    color #fff
+
+.header-main-items
+  display flex
+  justify-content space-between
+  font-family "Open Sans SB",sans-serif
+  .icon
+    margin-right 15px
+    fill #fff
+  .icon-mail
+    size(25px,20px)
+  .icon-clock
+    size(23px)
+
+.header-main__item
+  display flex
+  align-items center
+  font-size 18px
+.header-main__item--phone
+  display flex
+  flex-direction column
+  align-items center
+
+.header-main__phone--num
+  line-height 2
+  font-size 23px
+  font-family "Oswald SB",sans-serif
+  text-decoration none !important
+
+  &:hover
+    color #FDC630
+
+.header-main__phone--text
+  font-family "Open Sans Reg",sans-seri2
+  text-decoration none !important
+  border-bottom 1px dashed #fff
+  line-height 1.2
+  font-size 16px
+  opacity 0.6
+  cursor pointer
+
+  &:hover
+    color #FDC630
+    opacity 1
+    border-bottom 1px dashed #FDC630
+
+.index-slider__img
+  height: 100vh;
+
+.header-nav
+  background: rgba(43, 47, 63, 0.6);
+  backdrop-filter: blur(15px);
+  height 62px
+  display flex
+  align-items center
+.header-nav-menu--items
+  display flex
+  justify-content space-between
+  align-items center
+.header-nav-menu--item__link
+  font-family "Open Sans SB",sans-serif
+  color #fff
+  text-transform uppercase
+  font-size 15px
+  &:hover
+    text-decoration none
+
+.index-slider__img--wrap
+  position relative
+
+.index-slider-content-info
+  absolute-center()
+
+.index-slider-content-title
+  margin-bottom 20px
+
+.index-slider-content-text
+  font-family "Open Sans SB",sans-serif
+  font-size 22px
+  text-align center
+  color #B9BBC1
+  margin-bottom 60px
+  span
+    margin-left 5px
+    color #FDC630
+
+.index-slider-content-button
+  display flex
+  justify-content center
+
+.js-index-slider-dots--wrap
+  absolute($right:0,$left:0,$bottom:25px)
+  width: 100%;
+  height: 30px;
+  pointer-events none
+
+  ul
+    display flex
+    justify-content center
+    align-items center
+
+  li
+    size(24px)
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid transparent;
+    border-radius: 50%
+    transition: all linear 0.2s;
+    transform: scale(1);
+    margin-right: 10px;
+    cursor pointer
+    pointer-events auto
+
+
+li.slick-active .js-index-slider__dots
+  background: linear-gradient(135deg, #f37335, #fdc830);
+  transition all linear .4s
+  position absolute
+  opacity 1
+  box-shadow: 0 -3px rgba(255, 255, 255, 0) inset, 0 0 15px rgba(253, 200, 48, 0.53);
+
+  &:before
+    content ''
+    position absolute
+    left -4px
+    top -4px
+    background-color transparent
+    size(20px)
+    border 1.2px solid #F58434
+    border-radius 50%
+
+.js-index-slider__dots
+  size(12px)
+  display block
+  list-style: none;
+  border-radius: 50px;
+  background-color #FFFFFF
+  opacity 0.5
+  transition: all linear 0.2s;
+
+.index-slider-content-test
+  display flex
+  flex-direction column
+  align-items flex-end
+
+.index-slider-content-test--wrap
+  position relative
+  display flex
+  flex-direction column
+  align-items center
+  width max-content
+  margin-top 10px
+
+  .icon-Arrow
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    size(91px,85px)
+
+.index-slider-content-test-button
+  position absolute
+  top: 100px;
+  right: -90px;
+
+
+  a
+    background: linear-gradient(92.29deg, rgba(243, 117, 53, 0.8) 0%, rgba(253, 198, 48, 0.8) 100%);
+    size(74px)
+    display flex
+    justify-content center
+    align-items center
+    border-radius 50%
+    outline none
+
+    &:before
+      content ''
+      width: 180%;
+      height: 180%;
+      background-color: transparent;
+      border: 1.5px solid rgba(243, 117, 53, 0.8);
+      animation: ajicacircul 2.2s infinite ease-in-out;
+      transform-origin: 50% 50%;
+      left: calc(-40%);
+      top: calc(-40%);
+      animation-delay: 2s;
+      position: absolute;
+      border-radius: 100%;
+      transition: all .5s;
+      box-sizing: border-box;
+      opacity: 0;
+
+    &:after
+      content ''
+      width: 130%;
+      height: 130%;
+      background: linear-gradient(92.29deg, rgba(243, 117, 53, 0.8) 0%, rgba(253, 198, 48, 0.8) 100%);
+      border: 2px solid transparent;
+      animation: ajicacircul2 2.2s infinite ease-in-out;
+      background: linear-gradient(92.29deg, rgba(243, 117, 53, 0.8) 0%, rgba(253, 198, 48, 0.8) 100%);
+      left: calc(-15%);
+      top: calc(-15%);
+      position: absolute;
+      border-radius: 100%;
+      transition: all .5s;
+      box-sizing: border-box;
+      opacity: 0;
+      animation-delay: 2.5s;
+
+    @keyframes ajicacircul
+      0%
+        transform: rotate(0) scale(.5) skew(1deg);
+        opacity: .01;
+      30%
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .5;
+      100%
+        transform: rotate(0) scale(1) skew(1deg);
+        opacity: .01;
+
+    @keyframes ajicacircul2
+      0%
+        transform: rotate(0) scale(.6) skew(1deg);
+        opacity: 0;
+      30%
+        transform: rotate(0) scale(1) skew(1deg);
+        opacity: .2;
+      100%
+        transform: rotate(0) scale(.6) skew(1deg);
+        opacity: .2;
+
+
+  .icon-test
+    size(40px)
+    margin-left 8px
+    z-index 5
+    fill #fff
+
+.index-slider-text-test__white
+  color #fff
+  font-family "Open Sans Reg",sans-serif
+  font-size 15px
+.index-slider-text-test__yellow
+  font-family "Open Sans SB",sans-serif
+  text-transform uppercase
+  color #FDC630
+
+.header-fixed
+  display none !important
+  background: rgba(19, 23, 41, 0.2);
+  backdrop-filter: blur(20px);
+  width 100%
+  top 0
+  left 0
+  right 0
+  z-index 100
+.header-fixed--wrapper
+  display flex
+  width 100%
+  height 100px
+  justify-content center
+  align-items center
+
+  .header-main__item--phone
+
+    a
+      color #fff
+
+  .header-nav-menu--items
+    width 100%
+    margin-right 38px
+
+  .header-main-items
+    width 24%
+
+.index-page.modal-open
+  padding 0 !important
+
+.modal-backdrop
+  background: rgb(12, 16, 33);
+.header-nav-mobile
+  display none
+
+.header-nav-mobile--mail
+  display flex
+
+  .icon
+    fill #fff
+    size(19px)
+    margin-right 5px
+
+  a
+    color #fff
+    font-family "Open Sans Reg",sans-serif
+    font-size 14px
+
+
+.menu-sandwich {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.menu-sandwich .hamburguer {
+  position: relative;
+}
+
+.menu-sandwich .hamburguer,
+.menu-sandwich .hamburguer:before,
+.menu-sandwich .hamburguer:after {
+  display: block;
+  background-color: #fff;
+  width: 30px;
+  height: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-sandwich .hamburguer:before,
+.menu-sandwich .hamburguer:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu-sandwich .hamburguer:before {
+  top: -10px;
+}
+
+.menu-sandwich .hamburguer:after {
+  bottom: -10px;
+}
+
+
+.menu-sandwich.active .hamburguer {
+  bottom: 0;
+  transform: rotate(90deg);
+  width: 0;
+}
+
+.menu-sandwich.active .hamburguer:before {
+  top: 0;
+  transform: translateX(-50%) rotate(135deg);
+}
+
+.menu-sandwich.active .hamburguer:after {
+  bottom: 0;
+  transform: translate(-50%) rotate(45deg);
+}
+.header-nav-mobile--wrap
+  display flex
+  justify-content space-between
+  align-items center
+
+  label
+    margin 0
+
+
+.sandwich-menu-show
+  position fixed
+  right 0
+  left 0
+  bottom 0
+  top 0
+  background: rgba(43,47,63,0.6);
+  //will-change transform
+  //transform translateY(-100vh)
+  //transition-duration 100ms
+  display none
+  z-index 999
+
+.sandwich-menu-show.active
+  display block
+
+
+.sandwich-menu-close-button
+
+  .icon
+    size(25px)
+    fill #fff
+
+.sandwich-menu-close--wrap
+  display flex
+  justify-content space-between
+  align-items center
+  transition-duration 300ms
+  transform translateY(-100vh)
+  will-change transform
+
+.sandwich-menu-close--wrap.active
+  transform translateY(0vh)
+
+.sandwich-menu-header-main
+  width 100%
+  background: #2B2F3F;
+  box-shadow: 0px 0px 15px rgba(34, 34, 34, 0.3);
+  border-radius: 0px 0px 10px 10px;
+
+.sandwich-menu-header-main--list
+  overflow-y scroll
+  position: relative;
+  display: block;
+  height: 100%;
+  max-height: 100vh;
+
+.sandwich-menu-header-main--items
+  border-top: 1.5px solid rgba(255, 255, 255, 0.05);
+
+  //border-bottom: 1.5px solid rgba(255, 255, 255, 0.05);
+  a
+    font-family "Open Sans Reg",sans-serif
+    font-size 14px
+    color colorWOpacity
+    padding-left 15px
+    display block
+    padding-top 20px
+    padding-bottom 20px
+    text-transform uppercase
+
+.sandwich-menu-close--wrap .section-title-medium
+  margin 0
+
+.header-fixed  .header-nav-mobile--wrap
+  display none
+
+.mobile-slider-dots--wrap
+  position: absolute;
+  left: 0;
+  right: 0;
+  //bottom: 25px;
+  width: 100%;
+  height: 30px;
+  pointer-events: none;
+
+.mobile-slider-dots--wrap ul
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+.mobile-slider-dots--wrap li
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid transparent;
+  border-radius: 50%;
+  transition: all linear 0.2s;
+  transform: scale(1);
+  margin-right: 10px;
+  cursor: pointer;
+  pointer-events: auto;
+
+.mobile-slider__dots
+  width: 12px;
+  height: 12px;
+  display: block;
+  list-style: none;
+  border-radius: 50px;
+  background-color: #fff;
+  opacity: 0.5;
+  transition: all linear 0.2s;
+
+li.slick-active .mobile-slider__dots
+  background: linear-gradient(135deg, #f37335, #fdc830);
+  transition: all linear 0.4s;
+  position: absolute;
+  opacity: 1;
+  box-shadow: 0 -3px rgba(255,255,255,0) inset, 0 0 15px rgba(253,200,48,0.53);
+
+li.slick-active .mobile-slider__dots:before
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  border: 1.2px solid #f58434;
+  border-radius: 50%;
+
+// .mobile-slider-dots--wrap2  С
+.mobile-slider-dots--wrap2
+  position: absolute;
+  left: 0;
+  right: 0;
+  //bottom: 25px;
+  width: 100%;
+  height: 30px;
+  pointer-events: none;
+
+.mobile-slider-dots--wrap2 ul
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+.mobile-slider-dots--wrap2 li
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid transparent;
+  border-radius: 50%;
+  transition: all linear 0.2s;
+  transform: scale(1);
+  margin-right: 10px;
+  cursor: pointer;
+  pointer-events: auto;
+
+.mobile-slider__dots2
+  width: 12px;
+  height: 12px;
+  display: block;
+  list-style: none;
+  border-radius: 50px;
+  background-color: #fff;
+  opacity: 0.5;
+  transition: all linear 0.2s;
+
+li.slick-active .mobile-slider__dots2
+  background: linear-gradient(135deg, #f37335, #fdc830);
+  transition: all linear 0.4s;
+  position: absolute;
+  opacity: 1;
+  box-shadow: 0 -3px rgba(255,255,255,0) inset, 0 0 15px rgba(253,200,48,0.53);
+
+li.slick-active .mobile-slider__dots2:before
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  border: 1.2px solid #f58434;
+  border-radius: 50%;
+

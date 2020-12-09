@@ -1,0 +1,32 @@
+include ../mixins
+block variables
+
+doctype html
+html(lang="ru-RU")
+    head
+        meta(charset="utf-8")
+        title #{title}
+        <!--[if IE]>
+        meta(http-equiv='X-UA-Compatible', content="IE = edge")
+        <![endif]-->
+        meta(name="viewport" content="width=device-width,initial-scale=1")
+        meta(name="keywords" content="")
+
+        link(rel="stylesheet" type='text/css' href="static/css/main.css")
+        //link(rel="stylesheet" type='text/css' href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css")
+        script(src="static/js/jquery.js")
+        script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+    body(class=pageClass)
+        .wrapper
+            include ../modules/header
+            .content
+                block content
+            include ../modules/footer
+        script(src="static/js/libs.min.js")
+        script(src="static/js/main.js")
+        script(src="static/js/slick-init.js")
+        //script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
+        //script(src="static/js/datepicker-ru.js")
+        script(src="static/js/datepicker.ru-RU.js")
+        //script(src="static/js/swipemenu.js")
+        block script

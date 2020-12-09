@@ -1,0 +1,12 @@
+extends ../layout/common
+
+block variables
+    - var title = 'Отзывы'
+    - var pageClass = 'common-page'
+
+block content
+    include reviews/section-reviews-baner
+    include ../modules/breadcrumbs
+    include reviews/section-video-reviews
+    include reviews/section-review-comments
+    include index/section-have-question

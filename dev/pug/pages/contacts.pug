@@ -1,0 +1,11 @@
+extends ../layout/common
+
+block variables
+    - var title = 'Контакты'
+    - var pageClass = 'common-page'
+
+block content
+    include contacts/section-contacts-baner
+    include ../modules/breadcrumbs
+    include contacts/section-contacts
+    include index/section-have-question

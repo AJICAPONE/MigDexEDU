@@ -1,0 +1,11 @@
+extends ../layout/common
+
+block variables
+    - var title = 'Запись на экзамен'
+    - var pageClass = 'common-page'
+
+block content
+    include subtest-exam/section-subtest-baner
+    include ../modules/breadcrumbs
+    include subtest-exam/section-subtest-exam
+    include index/section-have-question

@@ -1,0 +1,11 @@
+extends ../layout/common
+
+block variables
+    - var title = 'Блог'
+    - var pageClass = 'common-page'
+
+block content
+    include articles/section-reviews-baner
+    include ../modules/breadcrumbs
+    include articles/section-articles-and-news
+    include index/section-have-question

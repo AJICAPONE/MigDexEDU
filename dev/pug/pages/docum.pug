@@ -1,0 +1,11 @@
+extends ../layout/common
+
+block variables
+    - var title = 'Документы'
+    - var pageClass = 'common-page'
+
+block content
+    include docum/section-baner-page
+    include ../modules/breadcrumbs
+    include docum/section-docum
+    include index/section-have-question

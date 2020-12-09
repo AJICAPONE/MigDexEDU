@@ -1,0 +1,1090 @@
+.rules
+  padding 80px 0
+
+.rules-line
+  display flex
+  justify-content space-between
+  width 100%
+  position relative
+  margin-bottom 60px
+
+  &:nth-child(even)
+    flex-flow row-reverse
+
+    .rules-50
+      &:first-child
+        align-content flex-end
+
+
+
+.rules-content-block
+  display: flex;
+  flex-direction column
+  width: 100vw;
+  max-width 118%
+  z-index 2
+  padding 40px
+.blue-box
+  background: #2B2F3F;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  transition all linear .3s
+
+  //&:hover
+  //  background: linear-gradient(135deg,#F37335,#FDC830);
+  //  box-shadow: 0 0 20px #FDC830;
+  //  transition all linear .3s
+
+
+.rules-50
+  display: flex;
+  flex-direction column
+  justify-content: center
+  width: 48.5%;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  align-content baseline
+
+.rules-img
+  width 100%
+  align-items flex-end
+  z-index 1
+  position relative
+
+.rules-img-text
+  absolute-center()
+  display flex
+  align-items center
+  width max-content
+  padding-right 70px
+
+  p
+    font-size 24px
+    font-family "Oswald Reg",sans-serif
+    color #fff
+    width max-content
+    text-align right
+
+    &:first-child
+      width 120px
+
+    &:nth-child(2)
+      margin 0 20px
+      font-size 60px
+
+    &:last-child
+      width 180px
+
+  .rules-img-text-shadow
+    color #FDC630
+    text-shadow: 0px 0px 10px rgba(253, 198, 48, 0.5);
+    font-family "Oswald SB",sans-serif
+
+.rules-40--img
+  display flex
+  width 100%
+  border-radius 5px
+
+.rules-title
+  font-family "Oswald SB",sans-serif
+  font-size 23px
+  color #fff
+  margin-bottom 30px
+
+.rules-text
+  font-family "Open Sans Reg",sans-serif
+  color rgba(255, 255, 255, 0.6)
+  margin-bottom 20px
+  font-size 15px
+  line-height 1.7
+
+.rules-checked-item
+  position relative
+  display flex
+  align-items center
+  margin-bottom 15px
+
+  .rules-text
+    margin-bottom 0
+
+.rules-check-item
+    display flex
+    justify-content center
+    align-items center
+    background: linear-gradient(92.29deg, rgba(243, 117, 53, 0.6) 0%, rgba(253, 198, 48, 0.6) 100%);
+    size(15px)
+    border-radius 50%
+    margin-right 12px
+    min-width 15px
+    &:before
+      content ''
+      display flex
+      justify-content center
+      align-items center
+      //position absolute
+      background: linear-gradient(92.29deg, #F37535 0%, #FDC630 100%);
+      box-shadow: 0px 0px 10px rgba(253, 198, 48, 0.5);
+      size(9px)
+      border-radius 50%
+
+// Секция .index-tests
+.exam-index-cards
+  display flex
+  width 100%
+  flex-flow: row wrap;
+  justify-content left
+
+
+//.index-tests
+//  margin-bottom 60px
+//
+//.index-tests2
+//  margin-bottom 90px
+
+.exam-index-card
+  display flex
+  flex-direction column
+  margin-right 30px
+  //width 25%
+  padding 20px 15px
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-basis: calc(25% - 22.5px);
+  position: relative;
+  margin-bottom: 30px;
+  border-radius 10px
+
+  &:last-child
+    margin-right 0
+
+  &:nth-child(4n)
+    margin-right 0
+
+.exam-index-card-2
+  display flex
+  flex-direction column
+  margin-right 30px
+  padding 20px 15px
+  //width 33.333%
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-basis: calc(33.33333% - 20px);
+  position: relative;
+  margin-bottom: 30px;
+  border-radius 10px
+
+  &:last-child
+    margin-right 0
+
+  &:nth-child(3n)
+    margin-right 0
+
+.exam-index-icon--title__wrap
+  display flex
+  margin-bottom 30px
+
+  .icon
+    size(54px)
+    min-width 54px
+    margin-right 20px
+
+.title-exam-card
+  display flex
+  align-items center
+  font-size 18px
+  font-family "Oswald SB",sans-serif
+  color #fff
+
+.exam-index-card--text
+  font-family "Open Sans Light",sans-serif
+  font-weight normal
+  font-size 14px
+  color rgba(255, 255, 255, 0.6)
+  margin-bottom 30px
+
+.exam-index-card--link
+  display flex
+  flex-grow 1
+  align-items flex-end
+  width max-content
+  color #F37535
+  font-family "Oswald Reg",sans-serif
+
+.section-title-medium
+  font-family "Oswald SB",sans-serif
+  color #fff
+  font-size 30px
+  text-align center
+  margin-bottom 30px
+
+// .index-baner-test
+.index-baner-test
+  display flex
+  background-size cover
+  background-repeat no-repeat
+  background-image url("/static/img/general/baner3.jpg")
+  //background: linear-gradient(32.82deg, rgba(37, 37, 45, 0.425) 0%, rgba(37, 37, 45, 0.5) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), linear-gradient(90deg, rgba(34, 34, 34, 0.315) 0%, rgba(34, 34, 34, 0.35) 100%), url(/static/img/general/baner1.jpg), linear-gradient(0deg, rgba(43, 47, 63, 0.5), rgba(43, 47, 63, 0.5)), linear-gradient(0deg, rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)), url(image.png), url(image.png);
+  box-shadow: 0px 0px 15px rgba(34, 34, 34, 0.3);
+  height 340px
+  margin-bottom 100px
+  //background-attachment fixed
+  background-position center
+
+  .row
+    height 100%
+
+.index-baner-test-wrap
+  display flex
+  margin 0 auto
+  height 100%
+
+.index-baner-test-text
+  margin-top 50px
+
+  .section-title-medium
+    font-size 29px
+
+.index-baner-its-free
+  font-family "Open Sans EB",sans-serif
+  font-size 30px
+  text-transform uppercase
+  text-align center
+  text-shadow: 0px 0px 10px rgba(253, 198, 48, 0.5);
+  background linear-gradient(90deg, #f37335, #fdc830);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom 40px
+
+.index-baner-test-start
+  margin 0 auto
+
+.index-baner-test-img
+
+  &:after
+    content: '';
+    width: 135%;
+    height: 168%;
+    background-size: contain;
+    position: absolute;
+    top: -131px;
+    background-position: bottom;
+    background-image: url(/static/img/general/girl.png);
+    background-repeat: no-repeat;
+    left: -60px;
+
+// .index-why-migdex
+//.index-why-migdex
+//  margin-bottom 60px
+
+.index-why-migdex-cards
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: left;
+
+.migdex-title
+  font-size 36px
+  margin-bottom 50px
+
+.index-why-migdex-card
+  display: flex;
+  align-items center
+  flex-direction: column;
+  margin-right: 30px;
+  padding: 30px 15px;
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-basis: calc(25% - 22.5px);
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 10px;
+
+  .icon
+    size(70px)
+    margin-bottom 30px
+
+  &:nth-child(4n)
+    margin-right 0
+
+.index-why-migdex-title
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-family: "Oswald Reg", sans-serif;
+  color: #fff;
+  text-align center
+  line-height 1.6
+
+// .index-need-docs
+.index-need-docs
+  padding 60px 0
+  background: #2B2F3F;
+  box-shadow: 0px 0px 15px rgba(34, 34, 34, 0.3);
+  padding-bottom 120px
+
+.index-need-docs-text
+  font-family "Oswald Reg",sans-serif
+  font-size 16px
+  color rgba(255, 255, 255, 0.6)
+  text-align center
+  margin 0 auto
+  margin-bottom 40px
+
+.need-docs-title
+  margin-bottom 30px
+
+.index-need-docs-elems
+  display flex
+  justify-content space-between
+  margin 0 auto
+
+.index-need-docs-elem--wrap
+  display flex
+  justify-content center
+  align-items center
+  z-index 1
+
+  &:nth-child(2)
+    transform translateY(20px)
+
+.index-need-docs-elem
+  position relative
+  display flex
+  justify-content center
+  align-items center
+  border-radius 50%
+  size(100px)
+  background: #404452;
+  z-index 5
+  box-shadow 0px 0px 0px 10px #363949
+
+  .icon
+    size(46px)
+
+  .icon-clip
+    margin-right -6px
+
+
+
+
+.need-docs-punktir
+  &:before
+    content ''
+    position absolute
+    background-image url("/static/img/general/punktir.svg")
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 290px;
+    height: 42px;
+    transform: translate(-198px, -15px) rotate(7deg);
+  &:after
+    content ''
+    position absolute
+    background-image url("/static/img/general/punktir.svg")
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 290px;
+    height: 42px;
+    transform: translate(203px, -10px) rotate(-2deg);
+.index-need-docs--name
+  position absolute
+  bottom -50px
+  display flex
+  align-items center
+  text-align center
+  font-size 17px
+.index-need-docs--name span
+  display flex
+  font-family "Open Sans SB"
+  color #FDBF2B
+
+.index-need-docs--name p
+  font-family "Open Sans SB"
+  margin-left 6px
+  color #fff
+  width max-content
+
+// .index-video
+.index-video
+  padding 60px 0
+
+.index-video-title--link__wrap
+  display flex
+  justify-content center
+  align-items center
+  position relative
+  margin-bottom 40px
+
+.index-video-review__link
+  position absolute
+  right 0
+  font-family "Open Sans SB",sans-serif
+  font-size 16px
+  color #F37535;
+  border-bottom 1.2px dotted #F37535;
+
+  &:hover
+    text-decoration none
+    border-bottom 1.2px dotted #fdc630;
+
+.index-video-title
+  margin-bottom 0
+
+
+
+
+
+
+
+
+.index-video-slider .slick-list {
+  padding-top: 4%!important;
+  padding-bottom: 4%!important;
+  padding-left: 15%!important;
+  padding-right: 15%!important;
+}
+
+.slick-dots {
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.index-video-slider .slick-track {
+  max-width: 100%!important;
+  transform: translate3d(0, 0, 0)!important;
+  perspective: 100px;
+}
+
+.index-video-slider-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0;
+  width: 100%!important;
+  transform: translate3d(0, 0, 0);
+  transition: transform 1s, opacity 1s;
+  outline none
+  cursor pointer
+}
+
+.slick-snext,
+.slick-sprev {
+  display: block;
+}
+
+.index-video-slider .slick-current {
+  opacity: 1;
+  position: relative;
+  display: block;
+  //transform: translate3d(0, 0, 12px);
+  transform scale(1.12)
+  z-index: 2;
+}
+
+.slick-snext {
+  opacity: 1;
+  transform: translate3d(28.8%, 0, 0px);
+  z-index: 1;
+}
+
+.slick-sprev {
+  opacity: 1;
+  transform: translate3d(-28.8%, 0, 0px);
+}
+.index-video-slider-source
+  display: block;
+  width: 85%
+  margin 0 auto
+  height: 380px;
+  border 8px solid #2B2F3F
+  background-color #2B2F3F
+  background-size contain
+  background-position center
+  box-shadow: 0px 0px 30px rgba(34, 34, 34, 0.5);
+  border-radius: 10px;
+  outline none
+  position relative
+
+
+.preload
+  background-size cover
+  position: absolute;
+  display: flex;
+  justify-content center
+  align-items center
+  width: 83.5%;
+  margin: 0 auto;
+  height: 365px;
+  top: 8px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index 2
+
+.icon-preload
+  absolute-center()
+  display flex
+  justify-content center
+  align-items center
+  size(100%)
+  &:after
+    content ''
+    position absolute
+    display flex
+    justify-content center
+    align-items center
+    background: linear-gradient(92.29deg, rgba(243, 117, 53, 0.8) 0%, rgba(253, 198, 48, 0.8) 100%);
+    size(50px)
+    border-radius 50%
+
+  &:before
+    content ''
+    background: linear-gradient(92.29deg, rgba(243, 117, 53, 0.4) 0%, rgba(253, 198, 48, 0.4) 100%);
+    size(62px)
+    border-radius 50%
+    position absolute
+
+  .icon
+    size(14px)
+    opacity 1
+    z-index 2
+
+
+.index-video-slider--wrapper
+  position relative
+  margin-bottom 60px
+.index-video-slider__controls
+  display flex
+  justify-content space-between
+  absolute-center()
+  width 100%
+
+.index-video-slider__controls
+  pointer-events none
+
+.index-video--controls
+  position relative
+  background: rgba(43, 47, 63, 0.4);
+  backdrop-filter: blur(4px);
+  size(50px)
+  border-radius 50%
+  pointer-events auto
+  cursor pointer
+
+  .icon
+    absolute-center()
+    size(16px)
+    fill #fff
+    transition all linear .1s
+
+  &:hover
+    .icon
+      fill #F89D32
+
+.index-video-slider-dots--wrap
+  display flex
+  width 100%
+  height 30px
+  justify-content center
+  align-items center
+
+  ul
+    display flex
+    justify-content center
+
+  li
+    margin-right 20px
+    cursor pointer
+    &:last-child
+      margin-right 0
+
+.index-video-slider__dots
+  background-color rgba(255, 255, 255, 0.5)
+  size(12px)
+  border-radius 50%
+  display block
+  position relative
+
+li.slick-active .index-video-slider__dots
+  background: linear-gradient(135deg, #f37335, #fdc830);
+  transition all linear .4s
+
+  &:before
+    content ''
+    position absolute
+    left -4px
+    top -4px
+    background-color transparent
+    size(20px)
+    border 1.2px solid #F58434
+    border-radius 50%
+
+// .index-real-review
+//.index-real-review
+//  margin-bottom 100px
+
+.index-real-review--list
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: left;
+  margin-bottom 20px
+
+.index-real-review--item
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-basis: calc(49% - 4px);
+  position: relative;
+  margin-bottom: 40px;
+  border-radius: 10px;
+
+  &:nth-child(2n)
+    margin-right 0
+
+.index-real-review--logo-name
+  display flex
+
+.index-real-review-logo-name
+  margin-right 20px
+  img
+    size(90px)
+
+.index-real-review-name--wrap
+  display flex
+  flex-direction column
+  justify-content center
+.index-real-review--logo-name--wrap
+  display flex
+  width max-content
+
+.index-real--name
+  color #fff
+  font-size 22px
+  font-family "Oswald SB",sans-serif
+  margin-bottom 10px
+.index-real-cource
+  font-family "Open Sans Reg",sans-serif
+  font-size 14px
+  color rgba(255, 255, 255, 0.61)
+
+.index-real-review--logo-name-stars--wrap
+  display flex
+  justify-content space-between
+  align-items center
+  margin-bottom 30px
+.index-real-review-text
+  position relative
+
+  &:before
+    content ''
+    position absolute
+    left 34px
+    top -20px
+    clip-path: polygon(50% 25%, 0% 100%, 100% 100%);
+    background-color #2B2F3F;
+    size(20px)
+.index-real-review-text p
+  background: #2B2F3F;
+  border-radius: 10px;
+  padding 25px 20px
+  font-family "Open Sans Reg",sans-serif
+  color rgba(255, 255, 255, 0.6)
+  font-size 15px
+.index-real-reviews--all
+  margin 0 auto
+
+// .index-articles-news
+
+.index-art-news-wrapper
+  width 100%
+  //margin-bottom 100px
+.index-articels--wrap
+  width 100%
+  margin-right 30px
+  margin-bottom 30px
+
+.index-news--wrap
+  width 50%
+.index-articles-news--wrap
+  display flex
+
+.index-art-news--title__wrap
+  justify-content space-between
+
+.index-art-news--title
+  margin-bottom 0
+.index-articles-list
+  display: flex;
+  width: 100%;
+  justify-content space-between
+  //margin-bottom: 20px;
+
+.index-article-item
+  display: flex;
+  flex-direction column
+  margin-right: 30px;
+  position: relative;
+  width 100%
+  //margin-bottom: 40px;
+  background: #2B2F3F;
+  box-shadow: 0px 0px 15px rgba(34, 34, 34, 0.3);
+  border-radius: 8px;
+  padding 10px
+  transition all linear .2s
+
+  &:last-child
+    margin-right 0
+
+  &:hover
+    background: linear-gradient(135deg,#f37335,#fdc830);
+    box-shadow: 0 -3px rgba(0,0,0,.3) inset, 0 0 15px rgba(253,200,48,.7);
+
+    .index-article--link
+      color #000
+
+.index-article-img--wrap
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  display: block;
+  height: 100%;
+  min-height 293px
+  max-height 293px
+  background-repeat: no-repeat;
+  background-position center
+  margin-bottom 8px
+
+.index-article--text
+  font-family "Oswald SB",sans-serif
+  color #fff
+  margin-bottom 20px
+  font-size 14px
+
+.index-article--link
+  display flex
+  flex-grow: 1;
+  align-items flex-end
+  width max-content
+  font-family "Open Sans SB"
+  color #F37535
+  font-size 14px
+
+.index-news-list
+  display: flex;
+  width: 100%;
+  flex-direction column
+  //margin-bottom: 20px;
+
+
+
+.index-news-item
+  display: flex;
+  position: relative;
+  width 100%
+  margin-bottom: 20px;
+  background: #2B2F3F;
+  box-shadow: 0px 0px 15px rgba(34, 34, 34, 0.3);
+  border-radius: 8px;
+  padding 10px
+
+.index-news-content--wrap
+  display flex
+  justify-content space-between
+  flex-direction column
+
+.index-news-img--wrap
+  background-size: cover;
+  width 100%
+  height 100px
+  max-width 100px
+  position: relative;
+  display: block;
+  margin-right 10px
+  background-repeat: no-repeat;
+  background-position center
+
+.index-news-link-date
+  display flex
+  justify-content: space-between
+  align-items center
+
+  span
+    font-family "Open Sans Reg",sans-serif
+    font-size 14px
+    color rgba(255, 255, 255, 0.61)
+
+.index-article-img-date
+  position absolute
+  display flex
+  left 0
+  top 20px
+  width: 100%;
+  height: 41px;
+
+  &:before
+    content''
+    position absolute
+    bottom: -5px;
+    left: -4px;
+    size(5px)
+    background-color: #BD5824
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+
+  span
+    position absolute
+    left -4px
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F37535
+    font-family "Open Sans SB",sans-serif
+    font-size 14px
+    color #fff
+    padding: 10px 40px 10px 20px;
+    clip-path: polygon(100% 0%, 83% 50%, 100% 100%, 25% 100%, 0% 100%, 0% 0%)
+    background-size: cover;
+    background-repeat: no-repeat;
+    width max-content
+// .index-have-question
+.index-have-question
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/static/img/general/baner3.jpg);
+  //background-attachment fixed
+  box-shadow: 0px 0px 15px rgba(34,34,34,0.3);
+  background-position center
+
+  padding 60px
+
+.index-have-question--wrap
+  margin-bottom 40px
+
+  p
+    font-family "Open Sans Reg",sans-serif
+    font-size 16px
+    color rgba(255, 255, 255, 0.6)
+    text-align center
+    margin-bottom 60px
+
+.index-have-question-form,.index-question-inputs-wrap
+  display flex
+  justify-content space-between
+  align-items flex-end
+.index-have-question-inputs
+  label
+    font-family "Oswald SB",sans-serif
+    color #fff
+.input-index-form
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  border none
+  height 49px
+  width 270px
+  padding 0 15px
+  color #fff
+  font-family "Oswald SB",sans-serif
+
+.button-submit-question
+  border none
+  height 49px
+
+.index-mobile-articles
+  display none
+
+.index-articles-list-wrapper
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: left;
+
+  .index-article-item
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    flex-grow: 0;
+    flex-basis: calc(100);
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 10px;
+.index-article-mobile-wrap
+  display flex
+  flex-direction column
+  justify-content space-between
+
+.index-mobile-articles-button
+  margin 0 auto
+
+.index-mobile-review-stars
+  display none
+
+.mobile-social-menu
+  display none
+
+
+.index-mobile-slider-dots--wrap
+  display none
+  width 100%
+  height 30px
+  justify-content center
+  align-items center
+  position absolute
+
+  ul
+    display flex
+    justify-content center
+
+  li
+    margin-right 20px
+    cursor pointer
+
+    &:last-child
+      margin-right 0
+
+.index-mobile-slider__dots
+  background-color rgba(255, 255, 255, 0.5)
+  size(12px)
+  border-radius 50%
+  display block
+  position relative
+
+li.slick-active .index-mobile-slider__dots
+  background: linear-gradient(135deg, #f37335, #fdc830);
+  transition all linear .4s
+
+  &:before
+    content ''
+    position absolute
+    left -4px
+    top -4px
+    background-color transparent
+    size(20px)
+    border 1.2px solid #F58434
+    border-radius 50%
+
+.index-mobile-video-slider--wrapper-main
+  display none
+
+// dots
+.testing-includes-dots--wrap
+  display none
+  width 100%
+  height 30px
+  justify-content center
+  align-items center
+  position absolute
+
+  ul
+    display flex
+    justify-content center
+
+  li
+    margin-right 20px
+    cursor pointer
+
+    &:last-child
+      margin-right 0
+
+.testing-includes-slider__dots
+  background-color rgba(255, 255, 255, 0.5)
+  size(12px)
+  border-radius 50%
+  display block
+  position relative
+
+li.slick-active .testing-includes-slider__dots
+  background: linear-gradient(135deg, #f37335, #fdc830);
+  transition all linear .4s
+
+  &:before
+    content ''
+    position absolute
+    left -4px
+    top -4px
+    background-color transparent
+    size(20px)
+    border 1.2px solid #F58434
+    border-radius 50%
+
+.baner-page-title
+  width 155%
+
+.index-slider
+  padding 0px
+  height 100vh
+
+.breadcrumbs
+  padding 0
+
+.mobile-have-question
+  display none
+
+.popup-zapis-exam-button
+  display none
+
+.mobile-articles-news-block
+  display none
+
+
+.migdex-article-item,.migdex-article-item2
+  position: relative;
+  background: #2b2f3f;
+  box-shadow: 0px 0px 15px rgba(34,34,34,0.3);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 0;
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+  width 31.3%
+  margin-bottom 30px
+
+.migdex-articles-list
+  width 100%
+  .index-news-link-date span
+    display none
+
+.migdex-news-active:nth-child(3n),.migdex-article-active:nth-child(3n)
+  margin 0 29px
+
+.index-real-review-stars
+  z-index 0
+
+.index-page .rules
+  padding-bottom 0
+
+.index-page .index-video
+  padding-bottom 0
+
+.migdex-articles-list
+  article
+    transition all linear .2s
+    &:hover
+      background: linear-gradient(135deg, #f37335, #fdc830);
+      box-shadow: 0 -3px rgba(0,0,0,0.3) inset, 0 0 15px rgba(253,200,48,0.7);
+
+      .index-article--link
+        color #000
+
+
+.index-article--link
+  text-decoration none !important
+
+.contacts-block-google-map
+  border-radius 0 10px 10px 0
+
+
+
+
+
+

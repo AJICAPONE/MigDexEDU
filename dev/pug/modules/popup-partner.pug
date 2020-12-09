@@ -1,0 +1,16 @@
+#popup-modal-partner.modal.fade.bd-example-modal-lg(tabindex='-1' role='dialog' aria-labelledby='myLargeModalLabel' aria-hidden='true')
+    .modal-dialog.modal-lg.partner-modal-width
+        .modal-content.partner-modal-content
+            .partner-fiz-ur-face.blue-box
+                .modal-header
+                    button.close.popup-close-migdex(type='button' data-dismiss='modal' aria-label='Close')
+                        +icon('close')
+                h3.section-title-medium.mb-4 Оставьте заявку для сотрудничества
+                .partner-fiz-ur-face-buttons
+                    .partner-ur-face-wrap.active
+                        .partner-ur-face-button.active(partner="ur-face") Юридическое лицо
+                    .partner-ur-face-wrap
+                        .partner-ur-face-button(partner="fiz-face") Физическое лицо
+                .partner-fiz-ur-face-content
+                    include ../pages/partenariat/partner-forms/partner-ur
+                    include ../pages/partenariat/partner-forms/partner-fiz

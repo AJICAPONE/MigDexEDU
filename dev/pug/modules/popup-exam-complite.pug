@@ -1,0 +1,35 @@
+#popup-exam-complite.modal.fade(tabindex='-1', role='dialog', aria-labelledby='popup-title', aria-hidden='true')
+    form.modal-dialog.modal-dialog-centered(role='document')
+        .modal-content.blue-box-popup.popup-modal-content
+            .modal-header
+                button.close.popup-close-migdex(type='button' data-dismiss='modal' aria-label='Close')
+                    +icon('close')
+            h3.section-title-medium.mb-5.text-center Тест пройден!
+            .modal-body.popup-modal-body
+                table.popup-exam-complite-table
+                    thead
+                        tr
+                            th.text-left Субтест
+                            th Баллы
+                            th Порог
+                    tbody
+                        tr.popup-exam-table-body.popup-exam-table-body-first
+                            td.popup-exam-table-body-item.text-left Граматика
+                            td.popup-exam-table-body-item 60
+                            td.popup-exam-table-body-item 60 / 100
+                        tr.popup-exam-table-body
+                            td.popup-exam-table-body-item.text-left Чтение
+                            td.popup-exam-table-body-item 60
+                            td.popup-exam-table-body-item 60 / 100
+                        tr.popup-exam-table-body
+                            td.popup-exam-table-body-item.text-left История
+                            td.popup-exam-table-body-item 60
+                            td.popup-exam-table-body-item 50 / 100
+                        tr.popup-exam-table-body
+                            td.popup-exam-table-body-item.text-left Законодательство
+                            td.popup-exam-table-body-item 60
+                            td.popup-exam-table-body-item 60 / 100
+
+            .modal-footer.popup-modal-footer
+                a.migdex-button-style-gray(href="") Пройти тест заново
+                button.migdex-button-style.popup-submit-button.popup-exam-sub(type="submit") Начать тестирование

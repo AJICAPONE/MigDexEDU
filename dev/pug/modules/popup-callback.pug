@@ -1,0 +1,17 @@
+#popup-callback.modal.fade(tabindex='-1', role='dialog', aria-labelledby='popup-title', aria-hidden='true')
+    form.modal-dialog(role='document')
+        .modal-content.blue-box-popup.popup-modal-content.col-xl-11
+            .modal-header.popup-modal-header
+                button.close.popup-close-migdex(type='button' data-dismiss='modal' aria-label='Close')
+                    +icon('close')
+            .modal-body.popup-modal-body
+                +icon('callback')
+                h3.popup-title-body Обратный звонок
+                p.popup-text-body.col-xl-11 Оставьте номер телефона, и наш специалист предоставит профессиональную консультацию по миграционным вопросам и вопросам тестирования
+                .popup-inputs-wrapper
+                    .popup-inputs-modal--wrap
+                        input.popup-modal-input(type="text" placeholder="Имя")
+                    .popup-inputs-modal--wrap
+                        input.popup-modal-input.mask-phone(type="text" placeholder="Номер телефона")
+            .modal-footer.popup-modal-footer
+               button.migdex-button-style.popup-submit-button(type="submit") Отправить

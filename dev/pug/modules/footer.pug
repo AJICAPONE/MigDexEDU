@@ -1,0 +1,89 @@
+footer
+    .container
+        .footer-blocks--wrap
+            .footer-blocks.footer-logo-call
+                +icon('logo')
+                a.migdex-button-style.footer-order-call(href="/") Заказать звонок
+            .footer-blocks
+                h3.footer-blocks--title Услуги
+                ul.footer-gray--list
+                    li.footer-gray--item
+                        a(href="/") Разрешение на работу (ИР)
+                    li.footer-gray--item
+                        a(href="/") Временное проживание (РВП)
+                    li.footer-gray--item
+                        a(href="/") Вид на жительство (ВНЖ)
+                    li.footer-gray--item
+                        a(href="/") Гражданство РФ
+                    li.footer-gray--item
+                        a(href="/") Элементарный (ТЭУ / A1)
+                    li.footer-gray--item
+                        a(href="/") Базовый (ТБУ / A2)
+                    li.footer-gray--item
+                        a(href="/") Первый (ТРКИ-1 / B1)
+                    li.footer-gray--item
+                        a(href="/") Второй (ТРКИ-2 / B2)
+                    li.footer-gray--item
+                        a(href="/") Третий (ТРКИ-3 / C1)
+                    li.footer-gray--item
+                        a(href="/") Четвертый (TРКИ-4 / C2)
+
+            .footer-blocks
+                ul.footer-blocks--list
+                    li.footer-blocks--title
+                        a(href="/") О нас
+                    li.footer-blocks--title
+                        a(href="/") Статьи
+                    li.footer-blocks--title
+                        a(href="/") Отзывы
+                    li.footer-blocks--title
+                        a(href="/") Консультация
+                    li.footer-blocks--title
+                        a(href="/") Цены
+                    li.footer-blocks--title
+                        a(href="/") Документы
+
+            .footer-blocks
+                h3.footer-blocks--title.footer-margin-gray Контакты:
+                ul.footer-gray--list.footer-contacts-info
+                    li.footer-gray--item
+                        a(href="tel:+74999384411") +7 (499) 938-44-11
+                    li.footer-gray--item
+                        a(href="tel:+79684060110") +7 (968) 406-01-10
+
+                h3.footer-blocks--title.footer-margin-gray Адрес:
+                ul.footer-gray--list.footer-contacts-info
+                    li.footer-gray--item
+                        p г. Москва, м. Шаболовская, Ленинский проспект, 19с1, 3 эт., оф 365, 366
+
+
+                h3.footer-blocks--title.footer-margin-gray Email:
+                ul.footer-gray--list.footer-contacts-info
+                    li.footer-gray--item
+                        a(href="mailto:info@migdex-edu.ru") info@migdex-edu.ru
+                .social-menu.mobile-social-menu
+                    a(href="/")
+                        +icon('vk')
+                    a(href="/")
+                        +icon('face')
+                    a(href="/")
+                        +icon('you')
+    .popup-modals-area
+        include ../modules/popup-callback
+        include ../modules/popup-register-exam
+        include ../modules/popup-subtest
+        include ../modules/popup-exam-complite
+        include ../modules/popup-partner
+section.footer-copyright
+    .container
+        .footer-copy-wrap
+            .footer-copy-conf-wrap
+                span Copyright © 2019 Migdexstroy.ru Все права защищены.
+                a.footer-conf(href="/") Политика конфиденциальности
+            .social-menu.footer-social-menu
+                a(href="/")
+                    +icon('vk')
+                a(href="/")
+                    +icon('face')
+                a(href="/")
+                    +icon('you')

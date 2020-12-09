@@ -1,0 +1,45 @@
+#popup-register-exam.modal.fade(tabindex='-1', role='dialog', aria-labelledby='popup-title', aria-hidden='true')
+    form.modal-dialog.modal-dialog-centered(role='document')
+        .modal-content.blue-box-popup.popup-modal-content
+            .modal-header
+                button.close.popup-close-migdex(type='button' data-dismiss='modal' aria-label='Close')
+                    +icon('close')
+            h3.section-title-medium.mb-5.text-center Запись на экзамен
+            .modal-body.popup-modal-body
+                .popup-reg-exam-name--wrap
+                    +icon('head')
+                    .popup-reg-exam-name-block
+                        span.popup-reg-exam-name Разрешение на работу (ИР)
+                        p.popup-text-body Комплексное тестирование для получения разрешения на работу
+                .popup-inputs-wrapper
+                    .popup-inputs-modal--wrap.popup-flex-input-wrap
+                        input.popup-modal-input(type="text" placeholder="Фамилия")
+                        input.popup-modal-input.mask-phone(type="text" placeholder="Номер телефона")
+                    .popup-inputs-modal--wrap.popup-flex-input-wrap
+                        input.popup-modal-input(type="text" placeholder="Имя")
+                        input.popup-modal-input(type="email" placeholder="Email")
+                    .popup-inputs-modal--wrap.popup-flex-input-wrap
+                        input.popup-modal-input(type="text" placeholder="Отчество")
+                        .popup-calendar
+                            input.popup-modal-input.date-mask(type="text" placeholder="Дата экзамена")
+                            .data-exam-popup
+                                +icon('calendar')
+                h3.section-title-medium.popup-modal-pay-title Способы оплаты
+                .popup-modal-input-checked-wrap
+                    .popup-modal-input-check
+                        label
+                            input.popup-modal-input-check__input(type="radio" name="buy_exam")
+                            .popup-modal-input-checked.checked
+                                .popup-modal-input-checked-dot
+                                span.popup-modal-input-checked--name Оплата картой онлайн
+                    .popup-modal-input-check
+                        label
+                            input.popup-modal-input-check__input(type="radio" name="buy_exam")
+                            .popup-modal-input-checked
+                                .popup-modal-input-checked-dot
+                                span.popup-modal-input-checked--name Оплата наличными
+
+
+            .modal-footer.popup-modal-footer
+                button.migdex-button-style.popup-submit-button.popup-zapis-exam-button(type="submit") Записаться
+                button.migdex-button-style.popup-submit-button.popup-buy-exam-button(type="submit") Оплатить

@@ -1,0 +1,1374 @@
+.baner-page
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/static/img/general/baner1.jpg);
+  box-shadow: 0px 0px 15px rgba(34,34,34,0.3);
+  height: 500px;
+
+.baner-page-content
+  absolute-center()
+  margin-top 70px
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+
+.baner-page-title
+  font-size 46px
+  font-family "Oswald SB",sans-serif
+  color #fff
+  margin-bottom 45px
+  text-align center
+  width max-content
+
+.breadcrumbs
+  position relative
+  background: #2B2F3F;
+  box-shadow: 0px 0px 15px rgba(34, 34, 34, 0.3);
+  height 50px
+  display flex
+  justify-content center
+  align-items center
+.baner-page-content
+  display flex
+.breadcrumbs-list
+  display flex
+
+.breadcrumbs-item
+  display flex
+  font-family "Open Sans Reg",sans-serif
+  font-size 14px
+
+  a
+    color rgba(255, 255, 255, 0.6)
+
+  &:after
+    content '/'
+    position relative
+    margin 0 8px
+    color rgba(255, 255, 255, 0.61)
+
+.breadcrumbs-item:last-child:after
+  content ''
+
+// .title-page
+
+.title-page
+  padding 60px 0
+
+.title-page-line
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  margin-bottom: 60px;
+
+.why-need-exam .title-page-line
+  &:last-child
+    margin-bottom 0
+
+
+.title-page-col-50
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+
+.title-page-col-40
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 41%;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+
+
+
+.title-page-col-content
+  padding 35px 50px
+  z-index 2
+.title-page-col-content-padding
+  padding 35px 30px
+.title-page-col-width
+  padding-right: 108px;
+  width 133%
+  z-index 1
+  min-height 430px
+  display: flex;
+  justify-content: center;
+  flex-direction column
+
+.title-page-about-exam
+  font-size 24px
+  font-family "Oswald SB",sans-serif
+  color #fff
+  margin-bottom 30px
+
+.title-page-about-exam-font-size
+  font-size 20px
+
+.title-page-text
+  font-family "Open Sans Reg",sans-serif
+  font-size 14px
+  color rgba(255, 255, 255, 0.6)
+  margin-bottom 25px
+
+  &:last-child
+    margin-bottom 0
+
+  span
+    color #fff
+    font-family "Open Sans SB",sans-serif
+
+
+
+.title-page-attention
+  display flex
+  justify-content center
+  align-items center
+
+  .icon
+    size(35px)
+    margin-right 15px
+
+  .title-page-text
+    margin-bottom 0
+
+.title-page-time-exam--list
+  margin-bottom 40px
+
+.title-page-time-exam--item,.title-page-time-exam--list-all
+  display flex
+  justify-content space-between
+
+.title-page-time-exam--item
+  margin-bottom 15px
+
+.title-page-time-exam--item__name
+  font-family "Open Sans Reg",sans-serif
+  font-size 14px
+  color rgba(255, 255, 255, 0.6)
+
+.title-page-time-exam--item__min
+  font-family "Open Sans SB",sans-serif
+  font-size 14px
+  color #fff
+
+.title-page-time-exam--all-name,.title-page-time-exam--list-time
+  font-family "Oswald SB",sans-serif
+  font-size 17px
+  color #fff
+
+.title-page-exam-test
+  background: #2B2F3F;
+  border-radius: 10px;
+  border-left 5px solid #F79233
+  padding 20px 30px
+  font-family "Open Sans Reg",sans-serif
+  font-size 14px
+  color colorWOpacity
+
+// .veto-page
+
+.veto-page
+  padding 60px 0
+  padding-bottom 0
+
+.veto-page-mat
+  display flex
+  align-items center
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(27px);
+  border-radius: 5px;
+  padding 25px 30px
+  margin-bottom 30px
+
+  &:hover
+    text-decoration none
+
+  &:last-child
+    margin-bottom 0
+
+  .icon
+    size(44px)
+    margin-right 22px
+    min-width 44px
+
+.veto-page-mat-text
+  font-size 14px
+  color #fff
+  font-family "Open Sans Reg",sans-serif
+
+
+//  .testing-includes
+
+.testing-includes
+  padding 60px 0
+
+.testing-includes--list
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: center;
+
+.testing-includes--item-icon-num
+  display flex
+  justify-content space-between
+  align-items center
+  margin-bottom 30px
+.testing-includes--item
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  padding: 20px 15px;
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-basis: calc(33.33333% - 20px);
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 5px;
+
+  &:nth-child(3n)
+    margin-right 0
+
+  &:last-child
+    margin-right 0
+
+.testing-includes--item-icon
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 0px 6px #363949;
+  background: #404452;
+  border-radius 50%
+  size(70px)
+  margin 7px
+
+
+  .icon
+    size(40px)
+
+.testing-includes--item--text
+  font-family "Open Sans Reg",sans-serif
+  color colorWOpacity
+  font-size 12px
+
+.testing-includes--item--number
+  font-family "Oswald SB",sans-serif
+  font-size 80px
+  color rgba(255,255,255,0.05);
+  position absolute
+  right 20px
+
+.contact-page
+  padding-bottom 100px
+
+.contact-page--text
+  color colorWOpacity
+  font-size 14px
+  font-family "Open Sans Reg",sans-serif
+  margin 0 auto
+  text-align center
+  margin-bottom 60px
+
+.contact-page--wrapper
+  display flex
+  justify-content space-between
+  align-items center
+  padding 23px 40px
+  margin 0 auto
+  margin-bottom 60px
+
+.contact-page-icon-wrap
+  display flex
+  justify-content center
+  align-items center
+  border-radius 50%
+  size(50px)
+  background: linear-gradient(92.29deg, rgba(243, 117, 53, 0.8) 0%, rgba(253, 198, 48, 0.8) 100%);
+  box-shadow: 0 0 0 10px #916539
+  margin-right 40px
+
+
+  .icon
+    size(26px)
+
+.contact-page-icon-phone
+  display flex
+  justify-content space-between
+  align-items center
+  margin-right 72px
+
+.contact-page-title-block,.contact-page--phone
+  font-family "Oswald SB",sans-serif
+  color #fff
+  font-size 24px
+
+.contact-page-exam-z
+  margin 0 auto
+
+.rules-download-blank
+  font-family "Open Sans Reg",sans-serif
+  color: #F37535;
+  font-size 16px
+  text-align center
+  display flex
+  justify-content center
+  align-items center
+  width max-content
+  margin 0 auto
+
+.title-page-patern__img
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+.patern-padding-block
+  padding 70px 50px
+  padding-right 125px
+
+.reviews-video-review-stay
+  display flex
+  margin 0 auto
+
+.articles-and-news
+  padding 60px 0
+
+.tabs-articles--wrap
+  display flex
+  justify-content center
+  margin 0 auto
+
+  .tab-article
+    margin-right 30px
+
+    &:last-child
+      margin-right 0
+
+.migdex-button-style-blue
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 57px;
+  //background: linear-gradient(135deg, #f37335, #fdc830);
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Oswald SB", sans-serif;
+  text-align: center;
+  color: #fff;
+  line-height: 29px;
+  border-radius: 5px;
+  box-shadow: 0 -3px rgba(0,0,0,0.3) inset;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  text-decoration: none !important;
+  background: #2B2F3F;
+
+.migdex-button-active
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 57px;
+  background: linear-gradient(135deg, #f37335, #fdc830);
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Oswald SB", sans-serif;
+  text-align: center;
+  color: #fff;
+  line-height: 29px;
+  border-radius: 5px;
+  box-shadow: 0 -3px rgba(0,0,0,0.3) inset;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  text-decoration: none !important;
+
+.tab-article
+  width 170px
+
+.article-news-tabs
+  display none
+
+.article-news-tabs.active
+  display block
+
+.articles-and-news--wrap
+  margin-right 0
+
+.migdex-active--wrapper,.migdex-active--wrapper2
+  display flex
+  justify-content space-between
+  width 100%
+
+.article-list-items,.news-list-items
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: left
+
+.article-list-item,.news-list-item
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-basis: calc(33.33333% - 20px);
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 10px;
+
+  .index-article-img-date:before
+    bottom -4px
+
+
+//.not-article-active,.not-news-active
+//    margin-right 30px
+//
+//
+//
+//    &:nth-child(3n+2)
+//      margin-right 30px
+//    &:nth-child(3n+1)
+//      margin-right 0
+
+.migdex-active,.migdex-active2
+  //display: flex;
+  //flex-direction: column;
+  margin-right: 30px;
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-basis: calc(49% - 0px);
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 10px;
+
+  &:nth-child(2n)
+    margin-right 0
+  .index-article--link
+    display none
+
+  .index-article--text
+    position absolute
+    bottom 0
+    padding 0px 20px
+
+  .index-article-img--wrap
+    margin-bottom 0
+    max-height 410px
+    min-height 380px
+
+
+.articles-show-more,.news-show-more
+  display flex
+  justify-content center
+  margin 0 auto
+
+.about-us
+  padding 60px 0
+
+.contacts-block
+  padding 60px 0
+
+.contacts-block--wrap
+  display flex
+  width 100%
+
+.contacts-block-map
+  display flex
+  width 100%
+
+.contacts-block-content
+  display flex
+  justify-content center
+  flex-direction column
+  align-items center
+  border-radius 10px 0 0px 10px
+  padding 40px 30px
+
+  .icon
+    size(119px,70px)
+    margin-bottom 30px
+.contacts-block-content__contacts
+  display flex
+  flex-direction column
+  margin-bottom 30px
+
+  &:last-child
+    margin-bottom 0
+
+  a
+    color colorWOpacity
+    font-family "Open Sans Reg",sans-serif
+
+
+.contacts-content-title
+  font-size 20px
+  font-family "Oswald SB",sans-serif
+  color #fff
+  text-transform uppercase
+  text-align center
+  margin-bottom 15px
+
+.contacts-block-content-text
+  color colorWOpacity
+  font-family "Open Sans Reg",sans-serif
+  text-align center
+  margin-bottom 5px
+
+.contacts-proezd
+  display flex
+  justify-content center
+  align-items center
+  margin 0 auto
+  color #F37535 !important
+  font-family "Open Sans Reg",sans-serif
+  border-bottom 1.2px dashed #F37535
+  width max-content
+
+.contacts-block-content__contacts
+
+
+  .social-menu
+    width 100%
+  .icon
+    size(20px)
+.contacts-block-map
+
+  .ymaps-2-1-75-map,.ymaps-2-1-75-inner-panes
+    border-radius 0 10px 10px 0
+
+.subject-test
+  padding 60px 0
+
+.subtest-migrant-wrapper
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: flex-start
+
+.subtest-migrant-item
+  display: flex;
+  align-items center
+  flex-direction: column;
+  margin-right: 30px;
+  padding: 30px 20px
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-basis: calc(25% - 22.5px);
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 10px;
+
+  .exam-index-card--text
+    text-align center
+
+  &:nth-child(4n)
+    margin-right 0
+
+  .icon
+    size(70px)
+    margin-bottom 30px
+
+
+.subtest-migrant-card
+  flex-direction column
+  margin-bottom 20px
+
+  span
+    margin-top 10px
+
+.subtest-stopwatch
+  display flex
+
+  span
+    color #fff
+    font-family "Open Sans SB",sans-serif
+    font-size 14px
+
+
+  .icon
+    size(25px)
+    margin-right 15px
+
+.subtest-button
+  width 100%
+  font-size 16px
+  color #fff !important
+
+.subtest-exam
+  padding 60px 0
+
+.subtest-migrant-item-remise
+  position absolute
+  right 15px
+  top 15px
+  background-color #363949
+  border-radius: 5px;
+
+.subtest-migrant-remise
+  position relative
+  margin 4px 12px
+  text-shadow: 0px 0px 5px rgba(253, 198, 48, 0.3);
+  background: linear-gradient(90deg, #f37335, #fdc830);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family "Oswald Reg",sans-serif
+
+.subtest-exam-summ
+  display flex
+  align-items center
+  margin-bottom 30px
+
+.subtest-summ
+  font-family "Oswald SB",sans-serif
+  font-size 20px
+  color #fff
+  margin-right 10px
+
+.subtest-prev-summ
+  font-family "Oswald Reg",sans-serif
+  font-size 14px
+  color colorWOpacity
+  text-decoration line-through
+
+.popup-reg-exam-name--wrap
+  display flex
+  align-items center
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  padding 30px
+  margin-bottom 30px
+
+  .icon
+    size(54px)
+    min-width 54px
+    margin-right 30px
+    margin-bottom 0
+
+.popup-reg-exam-name-block
+  display flex
+  flex-direction column
+
+
+  .popup-text-body
+    margin-bottom 0
+    text-align left
+    font-size 14px
+    font-family "Open Sans Light",sans-serif
+
+.popup-reg-exam-name
+  text-align left
+  font-family "Oswald SB",sans-serif
+  font-size 18px
+  color #fff
+  margin-bottom 5px
+
+#popup-register-exam .modal-dialog
+  max-width 600px
+
+.popup-flex-input-wrap
+  display flex
+  justify-content space-between
+
+  .popup-modal-input,.popup-calendar
+    width 47.5%
+.popup-calendar
+  position relative
+  width 100%
+  .popup-modal-input
+    width 100%
+
+#ui-datepicker-div
+  background: #2b2f3f;
+  box-shadow: 0px 0px 15px rgba(34,34,34,0.3);
+
+
+
+  color #fff
+  font-family "Open Sans Reg",sans-serif
+  font-size 14px
+
+  .ui-state-default
+    background: rgba(255,255,255,0.1);
+    border: none
+    color #fff
+    margin-bottom 2px
+    border-radius 3px
+
+  .ui-state-active
+    background: linear-gradient(135deg, #f37335, #fdc830);
+    color #fff
+
+  .ui-state-highlight
+    background-color #f5f5f5
+    color #000
+
+  thead
+    background: rgba(255,255,255,0.1);
+    border: 2px solid rgba(255,255,255,0.05);
+    border-radius 3px
+  .ui-datepicker-header
+    background: rgba(255,255,255,0.1);
+    border none
+    margin-bottom 3px
+    color #fff
+  .ui-datepicker-prev,.ui-datepicker-next
+    background-color #f5f5f5
+    cursor pointer
+
+.data-exam-popup
+  position absolute
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  top: 0;
+  width 50px
+  cursor pointer
+  border-radius: 0px 5px 5px 0;
+  //pointer-events none
+
+  .icon
+    size(25px)
+    margin 0 auto
+
+.popup-modal-pay-title
+  text-align center
+  font-size 20px
+.popup-modal-input-checked-wrap
+  display flex
+  justify-content space-between
+  width 100%
+
+.popup-modal-input-check
+  width 48%
+
+  label
+    width 100%
+
+.popup-modal-input-checked
+  display flex
+  align-items center
+  padding 22px 15px
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  height 65px
+  text-align center
+  color #fff
+  font-family: "Open Sans Reg",sans-serif
+  cursor pointer
+
+.popup-modal-input-checked.checked .popup-modal-input-checked-dot
+  size(21px)
+  background: linear-gradient(92.29deg, rgba(243,117,53,0.6) 0%, rgba(253,198,48,0.6) 100%);
+  border-radius 50%
+
+  &:before
+    content ''
+    display flex
+    justify-content center
+    align-items center
+    background: linear-gradient(92.29deg, #f37535 0%, #fdc630 100%);
+    box-shadow: 0px 0px 10px rgba(253,198,48,0.5);
+    opacity: 1;
+    size(12px)
+    border-radius 50%
+    absolute-center()
+
+.popup-modal-input-checked-dot
+  display flex
+  position relative
+  justify-content center
+  align-items center
+  size(21px)
+  background: #363A49;
+  border: 1px solid #404452;
+  border-radius 50%
+  margin-right 15px
+
+.popup-modal-input-check__input
+  display none
+
+#popup-subtest .modal-dialog
+  max-width 430px
+
+.exam-test
+  padding 60px 0
+
+.exam-test-info
+  padding 15px 25px
+  display flex
+  justify-content space-between
+  margin-bottom 30px
+
+.exam-test-info-time--wrap
+  display flex
+  align-items center
+
+.exam-test-info-count
+
+  &:after
+    content '/'
+    margin 0 5px
+
+.exam-test-info-count:last-child:after
+  content ''
+
+.exam-test-info-counts
+  display flex
+  align-items baseline
+
+.exam-test-info--title
+  font-family "Oswald SB",sans-serif
+  font-size 24px
+  color #fff
+  margin-right 40px
+  text-align center
+
+.exam-test-info-time
+  background: linear-gradient(94.76deg, #F37535 0%, #FDC630 100%);
+  border-radius: 5px;
+  padding 10px 30px
+  color #fff
+  font-family "Oswald SB",sans-serif
+  font-size 20px
+
+.exam-test-info-count
+  font-family "Oswald SB",sans-serif
+  font-size 17px
+  color colorWOpacity
+.exam-test-count-big
+  font-family "Oswald SB",sans-serif
+  font-size 24px
+  color #fff
+
+.exam-test-info-count-question
+  display flex
+  align-items center
+
+.exam-test-content
+  padding 30px 40px
+
+  .exam-test-info--title
+    margin-bottom 40px
+
+.exam-test-info-question
+  margin-bottom 30px
+
+  p
+    font-family "Open Sans Reg",sans-serif
+    color #fff
+    margin-bottom 15px
+
+
+.exam-test-info-variant-check
+  display: flex;
+  align-items: center;
+  padding: 22px 15px;
+  background-color #363949
+  border-radius: 5px;
+  height: 60px;
+  text-align: center;
+  color: #fff;
+  font-family: "Open Sans Reg", sans-serif;
+  cursor: pointer;
+
+.exam-test-info-question-variant
+  margin-bottom 20px
+
+  label
+    width 100%
+    margin 0
+
+.exam-test-info-variant-dot
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 21px;
+  height: 21px;
+  background: #363a49;
+  border: 1px solid #404452;
+  border-radius: 50%;
+  margin-right: 15px;
+
+.exam-test-info-variant-check.checked
+
+  .exam-test-info-variant-dot
+    width: 21px;
+    height: 21px;
+    background: -o-linear-gradient(357.71deg, rgba(243,117,53,0.6) 0%, rgba(253,198,48,0.6) 100%);
+    background: linear-gradient(92.29deg, rgba(243,117,53,0.6) 0%, rgba(253,198,48,0.6) 100%);
+    border-radius: 50%;
+
+    &:before
+      content: '';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(92.29deg, #f37535 0%, #fdc630 100%);
+      box-shadow: 0px 0px 10px rgba(253,198,48,0.5);
+      opacity: 1;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+.exam-modal-input-check__input
+  display none
+
+.migdex-exam-button-next
+  border none
+  margin 0 auto
+  width 210px
+
+.popup-exam-complite-table
+  width 100%
+  border-collapse separate
+  border-spacing 0
+
+#popup-exam-complite .modal-dialog
+  max-width 430px
+
+.popup-exam-complite-table th
+  color colorWOpacity
+  font-family "Open Sans Light",sans-serif
+  font-size 14px
+  padding 0 15px
+  line-height 2.5
+
+.popup-exam-table-body
+
+  &:nth-child(odd)
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    box-sizing: border-box;
+    border-radius: 5px 5px 0px 0px;
+
+.popup-exam-table-body-item
+  padding 15px
+  font-family "Open Sans Light",sans-serif
+  color #fff
+
+.popup-exam-table-body-first td:first-child
+  border-radius 5px 0 0 0
+.popup-exam-table-body-first td:last-child
+  border-radius 0px 5px 0 0
+
+.migdex-button-style-gray
+  display flex
+  align-items center
+  justify-content center
+  font-family "Oswald SB",sans-serif
+  color #fff
+  font-size 18px
+  background-color #404452
+  border-radius: 5px;
+  height 57px
+  width 210px
+  margin-bottom 20px
+
+.popup-exam-sub
+  width 210px
+
+.index-video-slider--prev
+  margin-left -80px
+
+.index-video-slider--next
+  margin-right -80px
+
+.traduction-item
+  height 100%
+  max-height 240px
+  padding 40px 10px
+  text-align center
+  border-radius 10px
+
+  .icon
+    size(70px)
+    margin-bottom 20px
+  p
+    color colorWOpacity
+    font-family "Open Sans Reg",sans-serif
+    font-size 14px
+  .long-traduction
+    width 100%
+    max-width 75%
+    text-align center
+    margin 0 auto
+
+.traduction
+  padding-top 70px
+
+.section-title-text
+  text-align center
+  color #fff
+  font-family "Open Sans Reg",sans-serif
+  font-size 14px
+
+.how-much-item
+  height 100%
+  max-height 270px
+  padding 40px 10px
+  text-align center
+  border-radius 10px
+
+  .icon
+    size(70px)
+    margin-bottom 30px
+
+.how-much-block
+  display flex
+  align-items center
+  justify-content center
+  margin-bottom 30px
+
+.how-much-name,.how-much-summ
+  font-family "Oswald SB",sans-serif
+  font-size 16px
+
+.how-much-name
+  color #fff
+  margin-right 10px
+  text-transform uppercase
+
+.how-much-summ
+  background: linear-gradient(90deg, #f37335, #fdc830);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+.how-much-block-order
+  width 100%
+  height 47px
+  max-width 210px
+  font-size 16px
+  margin 0 auto
+
+.dms-title
+  margin-bottom 15px
+
+.dms-baner-text
+  font-family "Open Sans Reg",sans-serif
+  font-size 20px
+  color #fff
+  text-align center
+  margin-bottom 40px
+
+.title-col-50
+  width 50%
+
+.title-width-115
+  width 115%
+
+.standart-pack-item
+  height 100%
+  max-height 270px
+  padding 30px
+  text-align center
+  border-radius 10px
+
+
+  .icon
+    size(70px)
+    margin-bottom 30px
+
+.standart-pack-item--text
+  font-size 18px
+  font-family "Oswald Reg",sans-serif
+  color #fff
+
+.prices-page-text
+  font-size 16px
+  color colorWOpacity
+  font-family "Open Sans Reg",sans-serif
+  text-align center
+  margin-bottom 40px
+
+.prices
+  padding-top 60px
+
+.prices-list
+  width 100%
+  box-shadow: 0px 0px 15px rgba(34, 34, 34, 0.3);
+  margin-bottom 15px
+  thead
+    tr
+      background: #2B2F3F;
+    th
+      font-family "Oswald SB",sans-serif
+      font-size 18px
+      color #fff
+      font-weight normal
+      width 33%
+      padding 25px
+      text-align center
+      &:first-child
+        border-radius 30px 0px 0 0
+      &:last-child
+        border-radius 0 30px 0 0
+
+
+  tbody
+    tr
+      font-size 15px
+      font-family "Open Sans SB",sans-serif
+      color #fff
+      &:nth-child(odd)
+        background-color #363949
+      &:nth-child(even)
+        background-color #2B2F3F;
+
+    tr:last-child
+      td
+        &:first-child
+          border-radius 0px 0px 0 30px
+        &:last-child
+          border-radius 0 0px 30px 0
+
+    td
+      padding 20px 40px
+      text-align center
+
+.prices-download
+  display flex
+  justify-content center
+  margin-bottom 60px
+  text-decoration none !important
+
+  .icon
+    size(20px)
+    fill #F37535
+    margin-right 10px
+  span
+    font-size 15px
+    font-family "Open Sans Reg",sans-serif
+    color #F37535
+
+.register-stay-prices
+  width 100%
+  max-width 210px
+  margin 0 auto
+
+.partner-img-wrap
+  display flex
+  justify-content center
+
+.partner-img
+  width 100%
+  max-width 170px
+
+.partner-img--link
+
+  &:first-child
+    margin-right 50px
+
+.partner-relative
+  position relative
+
+.partner-absolute-doc
+  position absolute
+  display flex
+  width 100%
+  justify-content center
+  margin-bottom 0
+  bottom -35px
+  padding-right 50px
+
+
+
+.partner-fiz-ur-face
+  padding 40px 30px
+
+.partner-fiz-ur-face-buttons
+  display flex
+  justify-content center
+  margin-bottom 40px
+.partner-ur-face-wrap
+  display block
+  width 100%
+  min-width 370px
+  max-width 370px
+  height 52px
+  cursor pointer
+  border-radius: 5px;
+  padding 2px 2px
+
+  &:first-child
+    margin-right 30px
+
+.partner-ur-face-wrap.active
+  background: linear-gradient(100.6deg, #F37535 0%, #FDC630 100%);
+
+.partner-ur-face-button
+  display flex
+  align-items center
+  justify-content center
+  text-align center
+  width 100%
+  height 100%
+  background-color: #363949
+  border-radius: 5px;
+  font-family "Oswald Reg",sans-serif
+  font-size 18px
+  color #fff
+.partner-fiz-ur-face-content
+  position relative
+.partner-fiz-ur-face-content-form
+  display none
+
+.partner-fiz-ur-face-content-form.active
+  display block
+.datepicker-container
+  font-family "Open Sans Reg",sans-serif
+
+
+.today-day-migdex
+  background-color #b3fcff !important
+
+.picked-day-migdex
+  background: linear-gradient(99.67deg, #F37535 0%, #FDC630 100%) !important
+
+.partner-wrap-input
+  margin-bottom 30px
+
+  label
+    color #fff
+    font-size 14px
+    font-family "Oswald Reg",sans-serif
+
+  input
+    height 47px
+    font-size 14px
+
+.partner-textarea
+  height 100%
+  max-height 154px
+  font-size 14px
+  padding 14px
+
+.selectCF
+  width 100%
+
+.onCF li ul
+  display block
+
+.select
+  width 100%
+  position relative
+
+.select-input
+  position: relative;
+  background: rgba(255,255,255,0.1);
+  border: 2px solid rgba(255,255,255,0.05);
+  border-radius: 5px;
+  height: 60px;
+  width: 100%;
+  padding: 20px;
+  color: rgba(255,255,255,0.6);
+  font-family: "Open Sans Reg", sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor pointer
+
+.partner-wrap-input .select-input
+  height: 47px;
+  font-size: 14px;
+
+.select-options
+  position: absolute;
+  left: 0;
+  right: 0;
+  border: 1px solid #686874;
+  z-index: 21;
+  display: none;
+  border-top: 0;
+
+.select-options li
+  padding: 8px 12px;
+  background-color: #fff;
+  font-family: SFPDR, sans-serif;
+  cursor: pointer;
+
+.append-icon .icon
+  position: absolute;
+  right: 14px;
+  width: 16px;
+  height: 9px;
+  fill: #FFF;
+
+.append-icon
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 0px;
+  z-index: 20;
+
+.arrow-rotate
+  transform: rotate(180deg);
+.partner-file
+  position relative
+  display flex
+  justify-content space-between
+  align-items center
+  width 100%
+  max-width: 200px;
+  height: 52px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  margin-right 20px
+
+
+  .icon
+    size(34px)
+    margin-right 20px
+
+  span
+    font-family "Open Sans SB",sans-serif
+    font-size 14px
+    color #fff
+
+#partner-files
+  absolute-center()
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  cursor: pointer;
+
+.partner-file--wrap
+  display flex
+  align-items center
+
+.partner-file-text
+  font-family "Open Sans SB",sans-serif
+  font-size 14px
+  color #fff
+.partner-description
+  margin-bottom 40px
+.partner-form-submit
+  border none
+  margin 0 auto
+
+
+

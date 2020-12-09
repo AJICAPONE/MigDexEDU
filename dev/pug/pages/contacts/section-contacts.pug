@@ -1,0 +1,29 @@
+section.contacts-block
+    .container
+        .contacts-block--wrap
+            .contacts-block-content.blue-box
+                a(href="")
+                    +icon('logo2')
+                .contacts-block-content__contacts
+                    h3.contacts-content-title Контакты:
+                    a(href="tel:+74999384411") +7 (499) 938-44-11
+                    a(href="tel:+79684060110") +7 (968) 406-01-10
+                .contacts-block-content__contacts
+                    h3.contacts-content-title Адрес:
+                    p.contacts-block-content-text г. Москва, м. Шаболовская, Ленинский проспект, 19с1, 3 эт., оф 365, 366
+                    a.contacts-proezd(href="/") Схема проезда
+                .contacts-block-content__contacts
+                    h3.contacts-content-title email:
+                    a(href="mailto:info@mctestirovaniya.ru") info@mctestirovaniya.ru
+                .contacts-block-content__contacts
+                    h3.contacts-content-title Соц. сети:
+                    .social-menu
+                        a(href="/")
+                            +icon('vk')
+                        a(href="/")
+                            +icon('face')
+                        a(href="/")
+                            +icon('you')
+            .contacts-block-map
+                iframe.contacts-block-google-map(src="https://www.google.com/maps/d/u/0/embed?mid=1VQmz6LE0Fcix7M6PyDfbd4kdHWOXW42s" width="100%" height="100%")
+                 //script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A666e8fdb0529494550c258ab55053d01a67cc047c21df12599d24d4848532a3f&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true")

@@ -1,0 +1,63 @@
+.partner-fiz-ur-face-content-form.ur-face.active
+    form
+        .partner-private-info
+            h3.section-title-medium Личная информация
+            .partner-wrap-inputs.row
+                .partner-wrap-input.col-lg-6.col-md-12.col-sm-12
+                    label ФИО:
+                    input.popup-modal-input(type="text" placeholder="Укажите данные")
+                .partner-wrap-input.col-lg-3.col-md-6.col-sm-6
+                    label Дата рождения:
+                    .popup-calendar
+                        input.popup-modal-input.date-mask(data-toggle="datepicker" type="text" placeholder="__.__.___")
+                        .data-exam-popup
+                            +icon('calendar')
+                .partner-wrap-input.col-lg-3.col-md-6.col-sm-6
+                    label Гражданство:
+                    input.popup-modal-input(type="text" placeholder="Укажите данные")
+                .partner-wrap-input.col-lg-6
+                    label Адрес:
+                    input.popup-modal-input(type="text" placeholder="Укажите данные")
+                .partner-wrap-input.col-lg-3.col-md-6.col-sm-6
+                    label Телефон:
+                    input.popup-modal-input.mask-phone(type="text" placeholder="+7 (___) ___-__-__")
+                .partner-wrap-input.col-lg-3.col-md-6.col-sm-6
+                    label Email:
+                    input.popup-modal-input(type="email" placeholder="Укажите данные")
+        .partner-description
+            h3.section-title-medium Описание заявки
+            .partner-wrap-inputs.row
+                .partner-sfera.col-lg-3.col-md-12
+                    .partner-wrap-input
+                        label Сфера деятельности:
+                        select.test
+                            option(value="Укажите данные") Укажите данные
+                            option(value="1") 1
+                            option(value="2") 2
+                            option(value="3") 3
+                        //input.popup-modal-input(type="text" placeholder="Укажите данные")
+                    .partner-wrap-input
+                        label Вид деятельности:
+                        select.test
+                            option(value="Укажите данны2") Укажите данны2
+                            option(value="1") 1
+                            option(value="2") 2
+                            option(value="3") 3
+                .partner-sfera-desc.col-lg-9
+                    .partner-wrap-input
+                        label Описание сотрудничества:
+                        textarea.popup-modal-input.partner-textarea(placeholder="Опишите суть сотрудничества..." rows="6")
+                .partner-file--wrap.col-lg-12
+                    .partner-file.col-lg-3
+                        +icon('pdf2')
+                        span.partner-text-name Добавить файл
+                        input#partner-files(type="file" name="files[]")
+                    p.partner-file-text — Добавьте деловое предложение, если таковое имеется
+        button.migdex-button-style.partner-form-submit(type="submit") Отправить
+
+
+
+
+
+
+

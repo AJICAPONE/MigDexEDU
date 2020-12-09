@@ -1,0 +1,1298 @@
+@import 'utils/fonts.styl'
+@import 'utils/vars.styl'
+@import 'utils/mixins.styl'
+@import 'libs.styl'
+
+html
+	font-size baseFontSize
+	height 100%
+	line-height 1.3
+
+body
+	font-family mainFont
+	height 100%
+
+h1,h2,h3,h4,h5,h6
+	margin 0
+
+ul,li
+	list-style-type none
+	margin 0
+	padding 0
+
+p
+	margin 0
+
+a
+	color black
+	text-decoration none
+
+	&:hover
+		color #FDC630
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video
+	vertical-align middle
+
+textarea
+	resize none
+
+section
+	position relative
+	padding-bottom 60px
+input,
+select,
+button
+	outline none
+
+*, *:before, *:after
+	box-sizing border-box
+
+.wrapper
+	display flex
+	flex-direction column
+	height 100%
+
+.content
+	flex 1 0 auto
+	background-image url("/static/img/general/bg.png")
+	background-size cover
+	background-color #131729
+	height max-content
+
+.section-title
+	font-family "Oswald SB",sans-serif
+	font-size 37px
+	color #fff
+	text-transform uppercase
+	text-align center
+
+
+
+
+.migdex-button-style
+	display flex
+	align-items center
+	justify-content center
+	width: 270px;
+	height: 57px;
+	background: linear-gradient(135deg,#F37335,#FDC830);
+	font-size: 20px;
+	font-weight: 400;
+	font-family: "Oswald SB",sans-serif;
+	text-align: center;
+	color: #fff;
+	line-height: 29px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 -3px rgba(0,0,0,0.3) inset;
+	box-shadow: 0 -3px rgba(0,0,0,0.3) inset;
+	cursor: pointer;
+	outline none
+	user-select: none;
+	text-decoration none !important
+	transition: .2s;
+
+	&:hover
+		color #fff
+		box-shadow: 0 -3px rgba(0,0,0,0.3) inset, 0 0 15px rgba(253,200,48,0.7);
+
+
+
+//Модули
+@import "modules/modules.styl"
+
+// СТРАНИЦЫ
+// Главная страница
+@import 'pages/index/index.styl'
+
+@import "pages/trki-pages-styles/common-pages.styl"
+
+// ===========================================  Новые стили ==================================//
+@import "pages/trki-pages-styles/new-styles.styl"
+// ===========================================  Новые стили ==================================//
+// @media
+
+@media screen and (max-width: 1440px)
+	.section-title
+		font-size 35px
+	.header-main__item
+		font-size 18px
+	.header-main__phone--num
+		font-size 20px
+	.header-main__phone--text
+		font-size 16px
+	.index-slider-content-text
+		font-size 20px
+		margin-bottom 40px
+	.index-slider-content-info
+		top 55%
+
+	.index-video-slider-source
+		width 75%
+		height 335px
+	.header-nav
+		height 55px
+	.slick-sprev
+		transform: translate3d(-22.8%, 0, 0px);
+	.slick-snext
+		transform: translate3d(22.8%, 0, 0px);
+	.index-video-slider--next
+		margin-right 0
+	.index-video-slider--prev
+		margin-left 0
+	.header-nav-menu--item__link
+		font-size 14px
+	.mobile-have-question
+		display none
+
+@media screen and (max-width: 1199px)
+	.header-main__item
+		font-size 16px
+	.header-main__phone--num
+		font-size 18px
+	.header-main__phone--text
+		font-size 14px
+	.header-logo .icon
+		width 100px
+	.header-main-items .icon-clock
+		size(20px)
+	.header-main-items .icon-mail
+		width 20px
+		height 18px
+	.header-nav-menu--item__link
+		font-size 14px
+	.header-nav
+		height 50px
+	.index-video-slider-source
+		width 75%
+		height 300px
+	.preload
+		height 285px
+		width 72.5%
+	.slick-sprev
+		transform: translate3d(-22.8%, 0, 0px);
+	.slick-snext
+		transform: translate3d(22.8%, 0, 0px);
+	.index-video-slider--next
+		margin-right 0
+	.index-video-slider--prev
+		margin-left 0
+	.section-title
+		font-size 32px
+	.index-slider-content-text
+		font-size 16px
+	.migdex-button-style
+		font-size 18px
+	.index-slider-content-button .migdex-button-style
+		width 220px
+	.index-slider-text-test__white
+		font-size 14px
+	.index-slider-content-test-button .icon-test
+		size(33px)
+	.index-slider-content-test-button a
+		size(60px)
+	.index-slider-content-test-button
+		top: 104px;
+		right: -69px;
+	.rules-text
+		font-size 13px
+	.rules-title
+		font-size 20px
+	.rules-content-block
+		padding 25px
+	.section-title-medium
+		font-size 25px
+	.title-exam-card
+		font-size 14px
+	.exam-index-icon--title__wrap .icon
+		width: 45px;
+		height: 45px;
+		min-width: 45px;
+	.exam-index-card--text
+		font-size 13px
+	.index-baner-test-img:after
+		top -131px
+		width: 155%;
+		left: -60px;
+	.index-why-migdex-card .icon
+		size(60px)
+	.index-why-migdex-title
+		font-size 14px
+	.index-need-docs-elem .icon
+		size(40px)
+	.index-need-docs-elem
+		size(85px)
+	.need-docs-punktir:before
+		width: 250px;
+		height: 34px;
+		transform: translate(-157px, -15px) rotate(7deg);
+	.need-docs-punktir:after
+		width: 250px;
+		height: 34px;
+		transform: translate(157px, -10px) rotate(-2deg);
+	.index-need-docs--name
+		font-size 14px
+	.index-video-review__link
+		font-size 14px
+	.icon-preload
+		width 73%
+	.index-video-slider-source
+		height 282px
+	.index-real-review-logo-name img
+		size(75px)
+	.index-real--name
+		font-size 18px
+	.index-real-cource
+		font-size 13px
+	.index-real-review--item
+		flex-basis: calc(49% - 6px);
+	.index-real-review-text p
+		font-size 13px
+	.index-real-review-text:before
+		left 26px
+	.index-article--text
+		font-size 13px
+	.index-article-img-date:before
+		bottom -4px
+	.footer-blocks--wrap
+		justify-content space-between
+	.footer-blocks:first-child
+		margin-right 30px
+	.footer-blocks--list .footer-blocks--title
+		text-align center
+	.footer-blocks--title
+		font-size 18px
+	.footer-copy-conf-wrap
+		font-size 12px
+	.header-main__phone--num
+		font-size 16px
+	.rules
+		padding-bottom 0
+	.index-baner-test
+		margin-bottom 50px
+	.mobile-have-question
+		display none
+	.subtest-migrant-item:nth-child(3n)
+		margin-right 0
+	.subtest-migrant-item
+		flex-basis: calc(33% - 17.5px);
+	.subtest-migrant-item:nth-child(4n)
+		margin-right 30px
+	.tabs-articles--wrap
+		width 48%
+	.migdex-article-item,.migdex-article-item2
+		width 30.9%
+	.rules-img-text p
+		font-size 20px
+	.rules-img-text p:last-child
+		width 150px
+
+
+@media screen and (max-width: 992px)
+	.header-main__item--phone:first-child
+		display none
+	.header-main__item
+		font-size 14px
+	.header-main__phone--num
+		font-size 16px
+	.header-main__phone--text
+		font-size 13px
+	.index-slider-content-button .migdex-button-style
+		width 190px
+	.index-slider-content-test
+		align-items flex-end
+	.index-slider-content-test--wrap p,.index-slider-content-test--wrap svg
+		display none
+	.index-slider-content-test-button svg
+		display block
+	.header-fixed--wrapper .header-nav-menu--items
+		margin-right 0
+	.header-nav-menu--item__link
+		font-size 13px
+	.rules-line
+		display: flex;
+		flex-direction: column-reverse;
+	.rules-50
+		width 100%
+		align-content center
+	.rules-content-block
+		width 90%
+		margin-top -25%
+	.index-slider-content-test-button
+		top: 110px;
+		right: 10px;
+	.rules-line:nth-child(even)
+		flex-direction column-reverse
+	.rules-line:nth-child(even) .rules-50:first-child
+		align-content center
+	.index-tests
+	.exam-index-card
+		flex-basis: calc(48% - 2px);
+	.exam-index-card:nth-child(2n)
+		margin-right 0
+	.exam-index-card-2:nth-child(2n)
+		margin-right 0
+	.exam-index-card-2
+		flex-basis: calc(49% - 20px);
+	.exam-index-card-2:nth-child(3n)
+		margin-right 30px
+	.exam-index-card-2:last-child
+		margin-right 0
+	.index-baner-test-text .section-title-medium
+		font-size 23px
+	.index-baner-test-img:after
+		top -131px
+	.index-why-migdex-card:nth-child(2n)
+		margin-right 0
+	.index-why-migdex-card
+		flex-basis: calc(49% - 8.5px);
+	.need-docs-punktir:before
+		width: 190px;
+		height: 26px;
+		transform: translate(-143px, -15px) rotate(7deg);
+	.need-docs-punktir:after
+		width: 198px;
+		height: 26px;
+		transform: translate(141px, -15px) rotate(7deg);
+	.index-need-docs--name
+		font-size 12px
+	.slick-snext,.slick-sprev
+		transform: translate3d(0, 0, 0px);
+	.index-video-slider .slick-current
+		transform scale(1.05)
+	.index-video-slider-source
+		width 100%
+	.icon-preload
+		width 100%
+	.index-video-slider-source
+		height 279px
+	.index-real-review--item
+		flex-basis: calc(100% - 0px);
+		margin-right 0
+	.index-articles-news--wrap
+		flex-direction column
+	.index-articels--wrap
+		margin-bottom 30px
+	.index-news--wrap
+		width 100%
+	.index-news-content--wrap
+		width 100%
+	.index-have-question-form, .index-question-inputs-wrap
+		flex-direction column
+		align-items center
+	.index-have-question-inputs
+		display flex
+		flex-direction column
+		margin-bottom 15px
+	.footer-blocks--wrap
+		display: flex;
+		width: 100%;
+		flex-flow: row wrap;
+		justify-content: left;
+
+	.footer-blocks
+		display: flex;
+		flex-direction: column;
+		margin-right: 30px;
+		flex-shrink: 1;
+		flex-grow: 0;
+		flex-basis: calc(45% - 4px);
+		position: relative;
+		margin-bottom: 40px;
+		border-radius: 10px;
+
+		&:nth-child(2n)
+			margin-right 0
+	.footer-copy-conf-wrap
+		display flex
+		flex-direction column
+
+	.baner-page-title
+		font-size 30px
+	.title-page-text
+		font-size 12px
+	.title-page-about-exam
+		font-size 20px
+	.title-page-col-content
+		padding 35px 20px
+	.title-page-col-width
+		padding-right 75px
+	.title-page-time-exam--item__name
+		font-size 12px
+	.title-page-time-exam--item__min
+		font-size 12px
+	.title-page-exam-test
+		font-size 12px
+	.veto-page-mat-text
+		font-size 12px
+	.veto-page-mat
+		padding 15px
+	.contact-page--text
+		font-size 12px
+		margin-bottom 30px
+	.contact-page-title-block, .contact-page--phone
+		font-size 18px
+	.title-page-time-exam--all-name, .title-page-time-exam--list-time
+		font-size 13px
+	.title-page
+		padding-bottom 0
+	.rules-line
+		margin-bottom 60px
+	.mobile-have-question
+		display none
+	.contacts-block--wrap
+		flex-direction column
+	.contacts-block-content
+		margin-bottom 30px
+		border-radius 10px
+	.contacts-block-map .ymaps-2-1-75-map, .contacts-block-map .ymaps-2-1-75-inner-panes
+		border-radius 10px
+	.subtest-migrant-item:nth-child(2n)
+		margin-right 0
+
+	.subtest-migrant-item
+		flex-basis: calc(49% - 8.5px);
+	.subtest-migrant-item:nth-child(3n)
+		margin-right 30px
+	.tabs-articles--wrap
+		width 55%
+	.article-list-item, .news-list-item
+		flex-basis: calc(48.33333% - 4px);
+	.migdex-news-active:nth-child(3n),.migdex-article-active:nth-child(3n)
+		margin-left 0
+		margin-right 0
+	.migdex-news-active:nth-child(even),.migdex-article-active:nth-child(even)
+		margin-right 29px
+
+	.migdex-article-item, .migdex-article-item2
+		width 47.6%
+
+
+
+
+.tabs-articles-mob
+	display none
+
+@media screen and (max-width: 768px)
+	.rules-img-text
+		transform: translate(-50%, -145%);
+		padding 0
+	.rules-img-text p:first-child
+		width 100px
+	.header-main-items:first-child
+		display none
+	.header-main-items
+		justify-content flex-end
+	.header-nav-desctop
+		display none
+	.header-nav-mobile
+		display flex
+	.header-fixed .header-nav-mobile--wrap
+		display flex
+	.header-nav-menu--items
+		display none
+	.header-fixed .header-main-items
+		display none
+	.index-slider-content-text
+		display none
+	.section-title
+		font-size: 24px;
+		width: 75%;
+		margin: 0 auto;
+		margin-bottom 25px
+	.rules-content-block
+		margin-top -35%
+	.index-tests .container
+		margin 0
+		padding 0
+		max-width 100%
+	.exam-index-card
+		margin-right 15px !important
+		display flex !important
+	.exam-index-card-2
+		margin-right 15px !important
+		display flex !important
+		height 265px
+	.index-baner-test-img
+		display none
+	.index-why-migdex .container
+		margin 0
+		max-width 100%
+	.index-why-migdex-card
+		flex-basis: calc(49% - 10.5px);
+	.index-video-slider .slick-list
+		padding-left: 4% !important;
+		padding-right: 4% !important;
+	.index-video-slider__controls
+		width 70%
+	.index-video-slider-source
+		height 271px
+	.index-slider-content-test-button
+		top: 110px;
+		right: 70px;
+	.exam-index-cards .slick-list
+		padding 0 50px
+	.exam-index-cards-2 .slick-list
+		padding 0 50px
+	.index-video-review__link
+		display none
+	.index-real-review-text:before
+		top -19px
+	.index-articles-news
+		display none
+	.index-article-item
+		margin-right 0
+	.footer-blocks:nth-child(2)
+		display none
+	.footer-blocks:nth-child(3)
+		display none
+	.footer-blocks
+		flex-basis: calc(47% - 0px);
+	.footer-copy-conf-wrap span
+		margin-right 0
+	.need-docs-punktir:before
+		display none
+	.need-docs-punktir:after
+		display none
+	.index-real-review--item:nth-child(-n+2)
+		display flex
+	.index-real-review--item
+		display none
+	.index-article-img--wrap
+		border-radius 8px 8px 0 0
+	.index-news-img--wrap
+		border-radius 5px 0px 0 5px
+	.index-mobile-articles
+		display block
+	.index-articles-list-wrapper .index-article-item:first-child
+		flex-direction column
+		.index-news-link-date span
+			display none
+		.index-article-img--wrap
+			background-size: cover;
+			width: 100%;
+			position: relative;
+			display: block;
+			height: 100%;
+			min-height: 293px;
+			max-height: 293px;
+			background-repeat: no-repeat;
+			background-position: center;
+			margin-bottom: 8px;
+			max-width initial
+			border-radius 8px 8px 0 0
+	.index-articles-list-wrapper .index-article-item
+		display flex
+		flex-direction inherit
+		.index-article-img-date
+			display none
+		.index-article-img--wrap
+			background-size: cover;
+			width: 100%;
+			height: 100px;
+			max-width: 100px;
+			position: relative;
+			display: block;
+			margin-right: 10px;
+			background-repeat: no-repeat;
+			background-position: center;
+			min-height: initial
+			max-height: initial
+			margin-bottom: 0
+			border-radius 5px 0px 0 5px
+	.index-video-slider__controls
+		display none
+
+	.title-page-line
+		flex-direction column
+		align-items center
+		margin-bottom 0
+	.title-page-col-50
+		width 100%
+	.title-page-col-width
+		width 100%
+		padding: 35px 40px 80px 40px;
+	.title-page-col-40
+		width 90%
+		z-index 2
+		margin-top -15%
+	.testing-includes
+		padding-top 0
+		.container
+			padding 0
+			margin 0
+			max-width 100%
+	.testing-includes--item
+		margin-right 30px
+		min-height 300px
+		height 100%
+		margin-bottom 0
+	.veto-page
+		margin-bottom 30px
+	.testing-includes--item:nth-child(3n)
+		margin-right 30px
+	.testing-includes--list .slick-list
+		padding 0 50px
+	.contact-page--wrapper
+		flex-direction column
+	.contact-page-icon-wrap
+		size(40px)
+		.icon
+			size(20px)
+	.contact-page-title-block
+		margin-bottom 28px
+	.testing-includes--item-icon .icon
+		size(33px)
+	.testing-includes--item-icon
+		size(60px)
+	.testing-includes--item--number
+		font-size 65px
+	.baner-page-title
+		width 155%
+	.mobile-have-question
+		display none
+	.title-page .title-page--wrapper
+		margin-bottom 30px
+	.exam-test-info--title
+		font-size 20px
+	.exam-test-info-time
+		padding: 6px 18px;
+	.exam-test-count-big
+		font-size 22px
+	.exam-test-info-question p
+		font-size 14px
+	.exam-test-info-variant-name
+		font-size 14px
+	.subtest-migrant-item:nth-child(2n)
+		margin-right 30px
+	.subtest-migrant-item
+		display flex !important
+	.subject-test .container
+		padding 0
+		margin 0
+		max-width 100%
+	.subtest-migrant-wrapper .slick-list
+		padding 0 15px
+	.subtest-exam .container
+		padding 0
+		margin 0
+		max-width 100%
+	.mobile-articles-news-block
+		display block
+
+	.article-news-tabs
+		.index-art-news--title__wrap
+			display none
+	.tabs-articles--wrap
+		width 80%
+		margin-bottom 40px
+	.tabs-articles-mob
+		display flex
+	.migdex-active,.migdex-active2
+		width 100%
+		margin-right 0
+	.migdex-article-item, .migdex-article-item2
+		margin-bottom 10px
+	.migdex-news-active:nth-child(3n),.migdex-article-active:nth-child(3n)
+		margin-bottom 10px
+	.migdex-article-item:nth-child(3n),.migdex-article-item2:nth-child(3n)
+		margin-bottom 10px
+	.migdex-article-active,.migdex-news-active
+		display flex
+		width 100%
+	.migdex-article-active .migdex-article-item__img--link,.migdex-news-active .migdex-article-item__img--link
+		display flex
+		width 100%
+		max-width 110px
+		.index-article-img-date
+			display none
+		.index-article-img--wrap
+			background-size: cover;
+			width: 100%;
+			height: 100px;
+			max-width: 100px;
+			position: relative;
+			display: block;
+			margin-right: 10px;
+			background-repeat: no-repeat;
+			background-position: center;
+			min-height: initial
+			max-height: initial
+			margin-bottom: 0
+			border-radius 5px 0px 0 5px
+	.migdex-articles-list .index-news-link-date span
+		display block
+	.migdex-active2 .index-news-link-date span,.migdex-active .index-news-link-date span
+		display none
+	.contacts-block-google-map
+		border-radius 0
+		height 280px
+
+
+@media screen and (max-width: 576px)
+	.rules-img-text p
+		font-size 18px
+	.rules-img-text p:nth-child(2)
+		font-size 40px
+	.rules-img-text p:last-child
+		width 134px
+	.rules-img-text p:first-child
+		width 85px
+	.header-fixed .header-nav-mobile--mail
+		display none
+	.index-page .index-video
+		padding 60px 0
+	.exam-index-cards .slick-list
+		padding 0 50px
+	.index-real-review-stars
+		display none
+	.index-mobile-review-stars
+		display block
+		z-index 1
+	.index-real-cource
+		display none
+	.index-article--link
+		font-size 12px
+	.index-news-link-date span
+		font-size 12px
+	.index-video-slider-source
+		height 163px
+	.index-why-migdex-card
+		margin-right 10px
+		margin-bottom 10px
+		flex-basis: calc(49% - 2.5px);
+		padding 20px 10px
+	.index-why-migdex-card .icon
+		size(50px)
+	.index-why-migdex-title
+		font-size 12px
+	.rules .container
+		margin 0
+		padding 0
+	.rules-40--img
+		border-radius 0
+	.rules-text
+		font-size 12px
+	.rules-title
+		text-align center
+	.rules-content-block
+		padding 15px 20px
+		margin-top -38%
+	.header-main__phone--num
+		font-size 18px
+	.index-slider-content-test-button .icon-test
+		size(24px)
+	.index-slider-content-test-button a
+		size(48px)
+	.section-title
+		font-size 20px
+	.exam-index-card--text
+		font-size 12px
+	.footer-blocks
+		flex-basis: calc(100% - 0px);
+		text-align center
+	.footer-blocks:first-child
+		margin-right 0
+	.footer-blocks:last-child
+		margin-bottom 0
+	.mobile-social-menu
+		display flex
+		width 100%
+	.footer-social-menu
+		display none
+	.footer-copy-conf-wrap
+		width 100%
+		text-align center
+		color #fff
+	footer
+		padding-bottom 0
+	.index-need-docs-text
+		font-size 12px
+	.index-need-docs-elems
+		flex-direction column
+		position relative
+		width 85%
+	.index-need-docs-elem--wrap
+		position relative
+		margin-bottom 100px
+		width max-content
+		&:last-child
+			margin-bottom 0
+	.index-need-docs-elem--wrap:first-child
+		justify-content flex-start
+		z-index 2
+
+	.index-need-docs-elem--wrap:nth-child(2)
+		justify-content flex-end
+		transform translate(180%, 0px)
+
+	.index-need-docs-elem--wrap:nth-child(3)
+		justify-content flex-start
+
+	.need-docs-punktir:before
+		content ''
+		display block
+		background-image url("/static/img/general/pun1.svg")
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 230px;
+		height: 277px;
+		transform: translate(9px, -117px) rotate(7deg);
+		z-index 1
+	.need-docs-punktir:after
+		content ''
+		display block
+		background-image url("/static/img/general/pun2.svg")
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 230px;
+		height: 250px;
+		transform: translate(-30px, 100px) rotate(7deg);
+		z-index: 1;
+	.index-articles-list-wrapper .index-article-item
+		margin-bottom 10px
+	.index-have-question--wrap p
+		margin-bottom 33px
+		font-size 12px
+		color #fff
+	.mobile-have-question .input-index-form
+		border: 2px solid rgba(255, 255, 255, 0.05);
+		margin-bottom 15px
+		font-family "Open Sans Light",sans-serif
+		font-size 14px
+		&:last-child
+			margin-bottom 0
+	.mobile-have-question .input-index-form::placeholder
+		color colorWOpacity
+	.mobile-have-question
+		display flex
+	.desktop-have-question
+		display none
+	.index-video-slider
+		display none
+	.header-fixed .header-nav-mobile--wrap
+		justify-content flex-end
+	.section-title-medium
+		font-size 21px
+	.index-video-mobile-slider
+		display flex
+		justify-content center
+		align-items center
+		position relative
+		background-size cover
+		height 250px
+		width: initial
+		background-position center
+		margin 5px
+		border-radius 10px
+
+		.icon
+			size(15px)
+			z-index 2
+	.index-mobile-video-slider--item
+		background: #2B2F3F;
+		box-shadow: 0px 0px 30px rgba(34, 34, 34, 0.5);
+		border-radius: 10px;
+		margin-right 15px
+		margin-left 15px
+
+		a
+			display block
+			width 100%
+	.index-video-slider--wrapper
+		display none
+	.content
+		background-size 200%
+	.index-video .container
+		margin 0
+		padding 0
+
+	.index-mobile-video-slider--wrapper .slick-list
+		padding 0 15px
+	.index-mobile-slider-dots--wrap
+		display flex
+	.index-video-mobile-slider:before
+		content: '';
+		background: -o-linear-gradient(357.71deg, rgba(243,117,53,0.4) 0%, rgba(253,198,48,0.4) 100%);
+		background: linear-gradient(92.29deg, rgba(243,117,53,0.4) 0%, rgba(253,198,48,0.4) 100%);
+		width: 62px;
+		height: 62px;
+		border-radius: 50%;
+		position: absolute;
+	.index-video-mobile-slider:after
+		content: '';
+		position: absolute;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		background: -o-linear-gradient(357.71deg, rgba(243,117,53,0.8) 0%, rgba(253,198,48,0.8) 100%);
+		background: linear-gradient(92.29deg, rgba(243,117,53,0.8) 0%, rgba(253,198,48,0.8) 100%);
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+
+	.popup-modal-body .icon
+		height 110px
+		margin-bottom 10px
+	.popup-title-body
+		font-size 20px
+	.popup-text-body
+		font-size 12px
+	.popup-modal-input
+		height 50px
+	.popup-inputs-modal--wrap
+		margin-bottom 15px
+	.popup-text-body
+		margin-bottom 30px
+	.index-mobile-video-slider--wrapper-main
+		display block
+	.baner-page-title
+		font-size 22px
+	.veto-page .container
+		margin 0
+		padding 0
+	.title-page-col-content
+		border-radius 0
+	.title-page .container
+		padding 0
+		margin 0
+	.title-page-exam-test
+		margin 0 15px
+	.section-title-medium
+		padding 0 20px
+	.testing-includes--list .slick-list
+		padding 0 15px
+	.testing-includes-dots--wrap
+		display flex
+	.contact-page--wrapper
+		padding 23px
+	.breadcrumbs-item
+		font-size 12px
+	.breadcrumbs .container
+		margin 0
+		padding 0
+		padding-left 15px
+	.breadcrumbs-list
+		overflow-x scroll
+	.title-page-col-width
+		padding-bottom 110px
+	.why-need-exam .title-page--wrapper
+		margin-bottom 0
+	.exam-test .container
+		padding 0
+		margin 0
+	.exam-test-content
+		padding 30px 15px
+	.popup-exam-complite-table
+		font-size 13px
+	.modal-content
+		padding 25px 10px
+	.migdex-button-style-gray
+		font-size 15px
+	.migdex-button-style
+		font-size 15px
+		width 190px
+	.contacts-content-title
+		font-size 16px
+	.contacts-block-content__contacts a
+		font-size 14px
+	.contacts-block-content-text
+		font-size 14px
+	.contacts-block-map .ymaps-2-1-75-map, .contacts-block-map .ymaps-2-1-75-inner-panes
+		border-radius 0
+	.contacts-block-map
+		height 280px
+	.contacts-block .container
+		padding 0
+		margin 0
+	.contacts-block-content
+		margin-right 15px
+		margin-left 15px
+	.about-us .title-page-about-exam
+		text-align center
+	.about-us .title-page-text
+		text-align center
+	.about-us .migdex-button-style
+		margin 0 auto
+	.about-us .title-page-col-40
+		margin-top -25%
+	.about-us .title-page--wrapper
+		margin-bottom 30px
+	.index-why-migdex-card
+		min-height 185px
+	.index-slider-content-test-button .icon-test
+		margin-right 5px
+	.page-video-reviews
+		margin-bottom 60px
+	.reviews-real-comments .index-real-review--item
+		display flex
+	.subtest-migrant-item
+		margin-right 15px
+
+	.subtest-migrant-item:nth-child(2n)
+		margin-right 15px
+	.subtest-migrant-item:nth-child(3n)
+		margin-right 15px
+	.popup-modal-input
+		font-size 14px
+	.header-logo .icon
+		width 85px
+		height 51px
+	.header-fixed--wrapper
+		height 80px
+    .tabs-articles--wrap
+       width 100%
+	#popup-register-exam
+		.popup-text-body
+			display none
+		.popup-reg-exam-name
+			font-size 14px
+		.popup-reg-exam-name--wrap
+			padding 20px
+			margin-bottom 20px
+		.popup-modal-body .icon
+			size(50px)
+			margin-bottom 0
+		.popup-flex-input-wrap
+			flex-direction column
+			margin-bottom 0
+		.popup-flex-input-wrap .popup-modal-input, .popup-flex-input-wrap .popup-calendar
+			width 100%
+			margin-bottom 20px
+		.popup-calendar .popup-modal-input
+			margin-bottom 0
+		.popup-modal-body .icon
+			size(25px)
+		.popup-modal-pay-title
+			display none
+		.popup-modal-input-checked-wrap
+			display none
+		.popup-buy-exam-button
+			display none
+		.popup-zapis-exam-button
+			display flex
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ====================================== @media Новые ====================== //
+@media screen and (max-width: 1440px)
+	.dropdown-absolute-menu
+		top 55px
+
+
+
+@media screen and (max-width:1199px)
+	.vidi-dms-item-item .icon
+		size(54px)
+	.vidi-dms-title
+		font-size 18px
+	.dropdown-absolute-menu
+		top 50px
+
+
+
+@media screen and (max-width: 992px)
+	.baner-tab-docum
+		width: 200px;
+		padding: 15px
+	.baner-tab-docum .icon
+		size(47px)
+	.migdex-long-button
+		font-size 16px
+	.partner-modal-width
+		width 100%
+		max-width 685px
+	.partner-sfera
+		display flex
+		justify-content space-between
+		.partner-wrap-input
+			width 100%
+			&:first-child
+				margin-right 30px
+	.dms-form-migrant-input-w:first-child
+		margin-bottom 30px
+	.dms-header-text1
+		font-size 20px
+	.dms-header-text2
+		font-size 12px
+	.dms-header-text3
+		font-size 14px
+	.dms-how-much-body-item
+		padding 20px 30px
+	.dms-how-much-body-item span
+		margin-right 20px
+	.menu-level-3
+		width 54%
+	.header-sub-menu-dropdown-item
+		font-size 13px
+
+
+
+@media screen and (max-width: 768px)
+	.packets-pay-item-wrap:first-child
+		margin-bottom 30px
+	.baner-page-title
+		width 100%
+	.baner-tab-docum--text
+		display none
+	.baner-tab-docum
+		width 100%
+	.baner-page-content
+		width 100%
+	.baner-tab-docum
+		padding 25px
+	.baner-tab-docum .icon
+		size(55px)
+	.section-title-docum
+		padding-bottom 60px !important
+	.prices-list thead th
+		font-size 14px
+	.prices-list tbody td
+		padding 15px
+		font-size 12px
+	.prices-page-text
+		font-size 12px
+	.partner-modal-width
+		width 100%
+		max-width 550px
+	.dms-form-migrant-input-w:nth-child(2)
+		margin-bottom 30px
+	.dms-form-migrant-input-w:nth-child(3)
+		margin-bottom 30px
+	.my-partner-blocks:first-child
+		margin-bottom 30px
+
+
+
+
+@media screen and (max-width: 576px)
+	.migdex-long-button
+		height 56px
+		width 100%
+		line-height 1.3
+	.baner-tab-docum
+		padding 15px
+	.baner-tab-docum .icon
+		size(35px)
+	.packets-pay-title
+		font-size 20px
+	.packets-pay-summ
+		font-size 20px
+	.contact-page-icon-phone
+		margin-right 0
+	.prices-list tbody td
+		padding 6px
+		font-size 10px
+	.partner-fiz-ur-face-buttons
+		flex-direction column
+	.partner-ur-face-wrap
+		margin-right 0
+		&:first-child
+			margin-bottom 20px
+	.partner-sfera
+		flex-direction column
+	textarea.popup-modal-input
+		height 154px
+	.partner-file--wrap
+		flex-direction column
+	.partner-file-text
+		display none
+	.partner-file
+		max-width max-content
+		margin-right 0
+	.partner-text-name
+		display none
+	.partner-file .icon
+		margin-right 0
+	.partner-file--wrap
+		align-items flex-start
+	.partner-wrap-input
+		margin-bottom 10px
+	.partner-modal-width
+		max-width 100%
+	.modal-dialog
+		margin 0
+	.partner-fiz-ur-face
+		padding 15px
+	.about-us .title-page--wrapper
+		margin-bottom 70px
+	.dms-for-migrant .container
+		padding 0
+
+	.dms-how-much-mobile-wrap
+		display flex !important
+	.dms-how-much-mobile-wrap
+		margin 0 -30px
+
+	.dms-how-much-mobile-wrapper
+		width 100vw
+		justify-content space-between
+		padding 10px
+
+	.dms-how-much-mobile-header--wrapper
+		width 40%
+	.dms-how-much-wrap
+		display none !important
+	.dms-header-text1
+		font-size 18px
+	.dms-how-much-mobile-body-list
+		width 100vw
+
+	.dms-how-much-mobile-body-list-item-wrap
+		display flex
+
+	.dms-tooltip-block
+		left -155px
+	.dms-tooltip-block:before
+		right 79px
+		bottom: -13px;
+
+	.dms-how-much-mobile-body-list-item-wrap:nth-child(odd)
+		background-color  #404452
+	.dms-how-much-body-item:nth-child(odd)
+		background-color transparent
+
+	.dms-how-much-mobile-body-list-js
+		width 100%
+	.dms-how-much-mobile-header2
+		text-align center
+
+	.dms-how-much-mobile-body-list-item-wrap li:nth-child(2)
+		width 40%
+
+	.my-partner-title
+		font-size 16px
+	.my-partner-text
+		font-size 12px
+
+
+
+
+
+
